@@ -1,4 +1,4 @@
-import Card from "./Card";
+import Card from "./Frame2Card";
 import ArrowWhiteChart from "../../../assets/ArrowWhiteChart.png";
 import ArrowBlackChart from "../../../assets/ArrowBlackChart.png";
 import BarChart from "../../../assets/BarChart.png";
@@ -19,7 +19,7 @@ const Frame2 = () => {
       </div>
       <div className="flex flex-col w-1/2 justify-evenly px-12">
         <div>
-          <p className="h-10 bg-gradient-to-r from-[#FDE3AD] to-[#FAA811] rounded-3xl px-8 py-12 w-full font-bold flex justify-center items-center text-justify">
+          <p className="h-10 bg-gradient-to-r from-[#FDE3AD] via-[#FAB735] to-[#FAA811] rounded-3xl px-8 py-12 w-full font-bold flex justify-center items-center text-justify">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque,
             numquam. Nobis quas, repudiandae praesentium in atque, sunt
             necessitatibus distinctio cum quod et, facere ipsam sed. Rerum enim

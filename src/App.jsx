@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 function App() {
 
   return (
-    <div className="bg-gradient-to-r from-purple-600 to-indigo-600 px-16">
+    <div className="bg-gradient-to-r from-purple-600 to-indigo-600 px-24">
      <Router>
       <Routes>
       <Route path="/" element={<Home />} />
