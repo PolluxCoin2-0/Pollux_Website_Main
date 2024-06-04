@@ -1,9 +1,16 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+
 function App() {
 
   return (
-    <>
-     <p className="text-green-500 text-4xl">Sample</p>
-    </>
+    <div className="bg-gradient-to-r from-purple-600 to-indigo-600 px-16">
+     <Router>
+      <Routes>
+      <Route path="/" element={<Home />} />
+      </Routes>
+     </Router>
+    </div>
   )
 }
 
