@@ -1,28 +1,31 @@
 import { FaArrowUpLong, FaRegClock } from "react-icons/fa6";
 
-const Card = ({chartType,BackgroundColor,BoldNumber,Percentage, ArrowColor, Description,Timing}) => {
+const Card = ({ chartType, BackgroundColor, BoldNumber, Percentage, ArrowColor, Description, Timing }) => {
   return (
-    <div className="relative ">
-        <div className="relative bg-white rounded-3xl px-4 pt-32 py-6">
-        <p className="font-bold text-black text-lg">{BoldNumber}</p>
-        <p className="py-1">{Description}</p>
-        <div className="flex flex-row items-center pb-2">
-          <FaArrowUpLong color={ArrowColor} />
-          <p>{Percentage}%</p>
-          <p>increase in today</p>
+    <div className="relative bg-white rounded-3xl shadow-lg flex flex-col justify-between p-6 transition transform hover:scale-105">
+      <div
+        className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[80%] p-4 rounded-3xl shadow-lg"
+        style={{ backgroundColor: `${BackgroundColor}`, marginTop: "2rem" }}
+      >
+        <img src={chartType} alt="" className="w-full h-auto" />
+      </div>
+      <div className="pt-20 flex flex-col justify-between h-full">
+        <div>
+          <p className="font-bold text-black text-2xl">{BoldNumber}</p>
+          <p className="py-2 text-gray-700">{Description}</p>
+          <div className="flex items-center text-green-500">
+            <FaArrowUpLong color={ArrowColor} />
+            <p className="ml-2">{Percentage}% increase <span className="text-gray-500">in today</span></p>
+          </div>
         </div>
-        <div className="border-[0.5px] border-slate-400 w-full my-2"></div>
-        <div className="flex flex-row items-center space-x-3 ">
-          <FaRegClock />
-          <p>{Timing} sec ago</p>
+        <div className="border-t mt-4 pt-2 text-gray-600 text-sm">
+          <div className="flex items-center">
+            <FaRegClock />
+            <p className="ml-2">{Timing} sec ago</p>
+          </div>
         </div>
-        
       </div>
-      <div className="flex justify-center items-center w-[90%] h-32 absolute left-0 -top-4 bg-slate-400 rounded-3xl p-8"
-        style={{backgroundColor:`${BackgroundColor}`}}>
-      <img src={chartType} alt="" />
-      </div>
-      </div>
+    </div>
   );
 };
 

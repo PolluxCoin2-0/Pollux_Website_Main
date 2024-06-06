@@ -16,10 +16,10 @@ const Frame5 = () => {
         unde sunt, nobis consequuntur. Aliquid voluptatum laboriosam explicabo
         praesentium magnam beatae mollitia voluptas?
       </p>
-      <div className="w-full flex items-center justify-around">
-      <Frame5Card img={IncreasingGraphWithMan} desc="HIGH-THROUGHPUT"/>
-      <Frame5Card img={IncreasingGraph} desc="HIGH-SCALABILITY"/>
-      <Frame5Card img={SettingIcon} desc="HIGH-AVAILABILITY"/>
+      <div className="w-full flex items-start justify-around">
+        <Frame5Card img={IncreasingGraphWithMan} desc="HIGH-THROUGHPUT" />
+        <Frame5Card img={IncreasingGraph} desc="HIGH-SCALABILITY" className="middle-card" />
+        <Frame5Card img={SettingIcon} desc="HIGH-AVAILABILITY" />
       </div>
     </div>
   );

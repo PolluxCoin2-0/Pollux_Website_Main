@@ -13,7 +13,7 @@ const Footer = () => {
           <p className="text-2xl pb-8 text-center">Pollux Coin</p>
           <div className="flex items-center justify-around">
           <ul>
-            <li className="py-1 cursor-pointer">Developers</li>
+            <li className="py-1 cursor-pointer">Developers</li>``
             <li className="py-1 cursor-pointer">Documentation</li>
             <li className="py-1 cursor-pointer">Technology</li>
             <li className="py-1 cursor-pointer">Grants</li>
