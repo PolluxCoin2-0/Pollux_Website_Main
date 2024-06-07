@@ -13,7 +13,7 @@ const Frame2 = () => {
   });
 
   return (
-    <div className={`min-h-screen flex flex-col items-center p-24 ${inView ? 'animate-slideInFromBottom' : ''}`} ref={ref}
+    <div className={`min-h-screen flex flex-col justify-center px-24 pt-24 ${inView ? 'animate-slideInFromBottom' : ''}`} ref={ref}
     style={{backgroundImage: `url(${BG})`,}}>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8 w-full px-4 md:px-8">
         <div className="md:col-span-1">

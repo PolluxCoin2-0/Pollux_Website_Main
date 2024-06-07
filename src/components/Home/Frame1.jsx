@@ -1,7 +1,6 @@
-import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import FrameRight from "../../assets/Frame1Right.png";
-import BG1 from "../../assets/BG.png";
+import Navbar from '../../layout/Navbar';
 
 const Frame1 = () => {
   const { ref: leftRef, inView: leftInView } = useInView({
@@ -15,9 +14,10 @@ const Frame1 = () => {
   });
 
   return (
-    <div className="flex flex-col md:flex-row lg:flex-row items-center px-24 min-h-screen"
-    style={{backgroundImage: `url(${BG1})`,}}>
-      <div 
+    <div className="fram1-bg px-12 min-h-screen">
+    <Navbar/>
+    <div className=' flex flex-col md:flex-row lg:flex-row items-center border-x-[1px] border-gray-600 px-12'>
+      <div
         className={`w-1/2 ${leftInView ? 'animate-slideInFromLeft' : ''}`} 
         ref={leftRef}
       >
@@ -32,10 +32,11 @@ const Frame1 = () => {
         <button className="bg-gradient-to-r from-[#FDE3AD] via-[#FAB735] to-[#FAA811] rounded-3xl px-4 py-3 font-bold">Learn more</button> 
       </div>
       <div 
-        className={`flex flex-col w-1/2 ${rightInView ? 'animate-slideInFromRight' : ''}`} 
+        className={`flex justify-end w-1/2 ${rightInView ? 'animate-slideInFromRight' : ''}`} 
         ref={rightRef}
       >
-        <img src={FrameRight} alt="" className=" w-[80%] h-[65%]" />
+        <img src={FrameRight} alt="" className=" w-full h-[65%]" />
+      </div>
       </div>
     </div>
   );

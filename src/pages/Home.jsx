@@ -6,7 +6,6 @@ import Frame5 from "../components/Home/Frame5/Frame5"
 import Frame6 from "../components/Home/Frame6"
 import Frame7 from "../components/Home/Frame7/Frame7"
 
-
 const Home = () => {
   return (
     <>

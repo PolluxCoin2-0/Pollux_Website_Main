@@ -1,8 +1,25 @@
+import LogoImage from '../assets/Logo.png'; 
+import { useInView } from 'react-intersection-observer';
 
 const Navbar = () => {
+  const { ref: topRef, inView: inViewTop } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
   return (
-    <div>Navbar</div>
-  )
-}
+    <nav  ref={topRef} className={`pt-16 ${inViewTop ? 'animate-slideInFromTop' : ''} `}>
+      <div className="container mx-auto flex items-center justify-around ">
+          <p className="text-white font-semibold text-2xl cursor-pointer border-t-[1px]">Ecosystem</p>
+          <p className="text-white font-semibold text-2xl cursor-pointer border-t-[1px]">Developers</p>
+          <div className="flex items-center space-x-2 -mt-16 border-b-[1px] border-x-[1px]">
+            <img src={LogoImage} alt="Logo" className="h-16 w-auto" />
+            <p className="text-white text-3xl font-semibold cursor-pointer">Polluxcoin</p>
+          </div>
+          <p className="text-white font-semibold text-2xl cursor-pointer border-t-[1px]">Ecosystem</p>
+          <p className="text-white font-semibold text-2xl cursor-pointer border-t-[1px]">Coin</p>
+      </div>
+    </nav>
+  );
+}; 
 
-export default Navbar
+export default Navbar;
