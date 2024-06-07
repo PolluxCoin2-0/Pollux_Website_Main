@@ -1,21 +1,38 @@
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
 import Insights from '../../assets/Insights.png';
 import BG4 from '../../assets/bg4.png';
 
 const Frame4 = () => {
+  const { ref: leftRef, inView: inViewLeft } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
+  const { ref: rightRef, inView: inViewRight } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
   return (
-    <div 
-      className="flex flex-col md:flex-row lg:flex-row items-center py-12 px-24" 
-      style={{ 
-        backgroundImage: `url(${BG4})`, 
+    <div
+      className="flex flex-col md:flex-row lg:flex-row items-center py-12 px-24"
+      style={{
+        backgroundImage: `url(${BG4})`,
         // backgroundSize: 'contain',
-        // backgroundPosition: 'center' 
+        // backgroundPosition: 'center'
       }}
     >
-      <div className="flex justify-start w-full md:w-1/2">
+      <div
+        className={`flex justify-start w-full md:w-1/2 ${inViewLeft ? 'animate-slideInFromLeft' : ''}`}
+        ref={leftRef}
+      >
         <img src={Insights} alt="Insights" className="w-full md:w-[90%] object-contain" />
       </div>
-      <div className="w-full md:w-1/2 px-4 mt-8 md:mt-0">
+      <div
+        className={`w-full md:w-1/2 px-4 mt-8 md:mt-0 ${inViewRight ? 'animate-slideInFromRight' : ''}`}
+        ref={rightRef}
+      >
         <p className="text-5xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-[#FDE3AD] via-[#FAB735] to-[#FAA811] text-transparent bg-clip-text">
           Insights
         </p>

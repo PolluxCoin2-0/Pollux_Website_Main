@@ -1,11 +1,18 @@
+import React from 'react';
+import { useInView } from 'react-intersection-observer';
 import Card from "./Frame2Card";
 import ArrowWhiteChart from "../../../assets/ArrowWhiteChart.png";
 import ArrowBlackChart from "../../../assets/ArrowBlackChart.png";
 import BarChart from "../../../assets/BarChart.png";
 
 const Frame2 = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
   return (
-    <div className="flex flex-col items-center p-24">
+    <div className={`flex flex-col items-center p-24 ${inView ? 'animate-slideInFromBottom' : ''}`} ref={ref}>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8 w-full px-4 md:px-8">
         <div className="md:col-span-1">
           <Card

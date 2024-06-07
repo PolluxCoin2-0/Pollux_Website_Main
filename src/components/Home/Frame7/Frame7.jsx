@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.min.css";
 import "swiper/css";
@@ -8,6 +9,29 @@ import { EffectCoverflow, Pagination, Navigation } from "swiper";
 import Frame7Card from "./Frame7Card";
 
 const Frame7 = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const element = document.querySelector('.frame7-container');
+      if (element) {
+        const rect = element.getBoundingClientRect();
+        const isInViewport = rect.top <= window.innerHeight && rect.bottom >= 0;
+        if (isInViewport) {
+          setIsVisible(true);
+          window.removeEventListener('scroll', handleScroll);
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Check immediately in case already in view
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   const cardsData = [
     {
       img: "",
@@ -42,7 +66,7 @@ const Frame7 = () => {
   ];
 
   return (
-    <div className="frame7-container flex flex-col justify-center items-center py-16 px-24">
+    <div className={`frame7-container flex flex-col justify-center items-center py-16 px-24 ${isVisible ? 'animate-slideInFromBottom' : ''}`}>
       <p className="text-8xl font-bold bg-gradient-to-r from-[#FDE3AD] via-[#FAB735] to-[#FAA811] inline-block text-transparent bg-clip-text mb-12">
         POX Ecosystem
       </p>

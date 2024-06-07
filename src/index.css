@@ -77,3 +77,65 @@
   .highcharts-contextbutton{
     display: none !important;
   }
+
+  @keyframes slideInFromLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInFromRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .animate-slideInFromLeft {
+    animation: slideInFromLeft 1s forwards;
+  }
+  
+  .animate-slideInFromRight {
+    animation: slideInFromRight 1s forwards;
+  }
+
+  
+  @keyframes slideInFromBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-slideInFromBottom {
+    animation: slideInFromBottom 1s ease-out forwards;
+  }
+
+  @keyframes slideInFromTop {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-slideInFromTop {
+    animation: slideInFromTop 1s ease-out forwards;
+  }
+  

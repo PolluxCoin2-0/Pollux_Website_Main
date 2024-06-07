@@ -5,12 +5,18 @@ import axios from 'axios';
 import exporting from 'highcharts/modules/exporting';
 import hollowcandlestick from 'highcharts/modules/hollowcandlestick';
 import accessibility from 'highcharts/modules/accessibility';
+import { useInView } from 'react-intersection-observer';
 
 exporting(Highcharts);
 hollowcandlestick(Highcharts);
 accessibility(Highcharts);
 
 const Frame3 = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
   const chartComponentRef = useRef(null);
   const [chartOptions, setChartOptions] = useState({
     chart: {
@@ -53,8 +59,8 @@ const Frame3 = () => {
   }, []);
 
   return (
-    <div className='text-center px-24'>
-        <p className="text-8xl h-28 font-bold bg-gradient-to-r from-[#FDE3AD] via-[#FAB735] to-[#FAA811] inline-block text-transparent bg-clip-text">
+    <div className={`text-center px-24 ${inView ? 'animate-slideInFromLeft' : ''}`} ref={ref}>
+      <p className="text-8xl h-28 font-bold bg-gradient-to-r from-[#FDE3AD] via-[#FAB735] to-[#FAA811] inline-block text-transparent bg-clip-text">
         POX Market Performance
       </p>
       <p className="text-white py-12 text-lg">
@@ -65,40 +71,40 @@ const Frame3 = () => {
         praesentium magnam beatae mollitia voluptas?
       </p>
       <div className='flex space-x-6'>
-      <HighchartsReact
-        highcharts={Highcharts}
-        constructorType={'stockChart'}
-        options={chartOptions}
-        ref={chartComponentRef}
-      />
-      <div className='flex flex-col justify-between text-white'>
-         <div className='flex flex-col border-[1px] rounded-3xl px-16 py-5'>
-          <p className='font-bold text-3xl'>$673653648</p>
-          <p className='font-semibold text-xl'>Total Market Cap</p>
-         </div>
-         <div className='flex flex-col border-[1px] rounded-3xl px-16 py-5'>
-          <p className='font-bold text-3xl'>6736</p>
-          <p className='font-semibold text-xl'>Global Rank</p>
-         </div>
-         <div className='flex flex-col border-[1px] rounded-3xl px-16 py-5'>
-          <p className='font-bold text-3xl'>67365</p>
-          <p className='font-semibold text-xl'>Accounts holding POX</p>
-         </div>
-      </div>
+        <HighchartsReact
+          highcharts={Highcharts}
+          constructorType={'stockChart'}
+          options={chartOptions}
+          ref={chartComponentRef}
+        />
+        <div className='flex flex-col justify-between text-white'>
+          <div className='flex flex-col border-[1px] rounded-3xl px-16 py-5'>
+            <p className='font-bold text-3xl'>$673653648</p>
+            <p className='font-semibold text-xl'>Total Market Cap</p>
+          </div>
+          <div className='flex flex-col border-[1px] rounded-3xl px-16 py-5'>
+            <p className='font-bold text-3xl'>6736</p>
+            <p className='font-semibold text-xl'>Global Rank</p>
+          </div>
+          <div className='flex flex-col border-[1px] rounded-3xl px-16 py-5'>
+            <p className='font-bold text-3xl'>67365</p>
+            <p className='font-semibold text-xl'>Accounts holding POX</p>
+          </div>
+        </div>
       </div>
       <div className='w-full flex flex-row justify-between text-white py-12'>
-      <div className='flex flex-col border-[1px] rounded-3xl px-16 py-5'>
+        <div className='flex flex-col border-[1px] rounded-3xl px-16 py-5'>
           <p className='font-bold text-3xl'>6736</p>
           <p className='font-semibold text-xl'>Current Price</p>
-         </div>
-         <div className='flex flex-col border-[1px] rounded-3xl px-16 py-5'>
+        </div>
+        <div className='flex flex-col border-[1px] rounded-3xl px-16 py-5'>
           <p className='font-bold text-3xl'>6736</p>
           <p className='font-semibold text-xl'>Transaction Volume (24hr)</p>
-         </div>
-         <div className='flex flex-col border-[1px] rounded-3xl px-16 py-5'>
+        </div>
+        <div className='flex flex-col border-[1px] rounded-3xl px-16 py-5'>
           <p className='font-bold text-3xl'>67365</p>
-          <p className='font-semibold text-xl'>Transaction Count(24hr)</p>
-         </div>
+          <p className='font-semibold text-xl'>Transaction Count (24hr)</p>
+        </div>
       </div>
     </div>
   );
