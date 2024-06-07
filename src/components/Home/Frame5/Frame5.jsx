@@ -5,7 +5,7 @@ import SettingIcon from "../../../assets/SettingIcon.png";
 
 const Frame5 = () => {
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center px-24">
       <p className="text-8xl h-28 font-bold bg-gradient-to-r from-[#FDE3AD] via-[#FAB735] to-[#FAA811] inline-block text-transparent bg-clip-text">
         POXPROTOCOL Features
       </p>

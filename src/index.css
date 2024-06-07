@@ -69,3 +69,11 @@
     font-size: 18px;
     font-weight: bold;
   }
+
+  .highcharts-root{
+    border-radius: 24px;
+  }
+
+  .highcharts-contextbutton{
+    display: none !important;
+  }

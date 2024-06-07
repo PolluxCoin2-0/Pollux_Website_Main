@@ -2,7 +2,7 @@ import FrameRight from "../../assets/Frame1Right.png";
 
 const Frame1 = () => {
   return (
-    <div className="flex flex-col md:flex-row lg:flex-row items-center">
+    <div className="flex flex-col md:flex-row lg:flex-row items-center px-24">
       <div className="w-1/2">
         <p className="text-8xl text-white font-bold">DECENTRALIZE</p>
         <p className="text-8xl  font-bold bg-gradient-to-r from-[#FDE3AD] via-[#FAB735] to-[#FAA811] inline-block text-transparent bg-clip-text">THE WEB</p>

@@ -42,7 +42,7 @@ const Frame7 = () => {
   ];
 
   return (
-    <div className="frame7-container flex flex-col justify-center items-center py-16">
+    <div className="frame7-container flex flex-col justify-center items-center py-16 px-24">
       <p className="text-8xl font-bold bg-gradient-to-r from-[#FDE3AD] via-[#FAB735] to-[#FAA811] inline-block text-transparent bg-clip-text mb-12">
         POX Ecosystem
       </p>
