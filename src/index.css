@@ -145,5 +145,10 @@
   background-position: center;
 }
 
-
+.navbar-react{
+  background-image: url("./assets/Rectangle.png");
+  background-size: cover; 
+  background-position: -0px 20px;
+  background-repeat: no-repeat;
+}
 
