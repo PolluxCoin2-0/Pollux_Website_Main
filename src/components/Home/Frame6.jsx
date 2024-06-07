@@ -2,6 +2,7 @@ import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import OffChain from "../../assets/offchain.png";
 import Net from "../../assets/net.png";
+import BG from "../../assets/BG.png";
 
 const Frame6 = () => {
   const { ref: leftRef, inView: inViewLeft } = useInView({
@@ -15,7 +16,8 @@ const Frame6 = () => {
   });
 
   return (
-    <div className="flex flex-col md:flex-row lg:flex-row items-center py-12 px-24">
+    <div className="min-h-screen flex flex-col md:flex-row lg:flex-row items-center py-12 px-24"
+    style={{backgroundImage: `url(${BG})`,}}>
       <div
         ref={leftRef}
         className={`w-1/2 px-12 ${inViewLeft ? 'animate-slideInFromLeft' : ''}`}

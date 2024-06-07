@@ -2,14 +2,14 @@ import { FaArrowUpLong, FaRegClock } from "react-icons/fa6";
 
 const Card = ({ chartType, BackgroundColor, BoldNumber, Percentage, ArrowColor, Description, Timing }) => {
   return (
-    <div className="relative bg-white rounded-3xl shadow-lg flex flex-col justify-between p-6 transition transform hover:scale-105">
+    <div className="w-full relative bg-white rounded-3xl shadow-lg flex flex-col justify-between p-6 transition transform hover:scale-105">
       <div
-        className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[80%] p-4 rounded-3xl shadow-lg"
+        className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[90%] p-4 rounded-3xl shadow-lg "
         style={{ backgroundColor: `${BackgroundColor}`, marginTop: "2rem" }}
       >
         <img src={chartType} alt="" className="w-full h-auto" />
       </div>
-      <div className="pt-20 flex flex-col justify-between h-full">
+      <div className="pt-32 flex flex-col justify-between h-full">
         <div>
           <p className="font-bold text-black text-2xl">{BoldNumber}</p>
           <p className="py-2 text-gray-700">{Description}</p>

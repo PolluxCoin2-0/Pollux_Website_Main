@@ -4,6 +4,7 @@ import Card from "./Frame2Card";
 import ArrowWhiteChart from "../../../assets/ArrowWhiteChart.png";
 import ArrowBlackChart from "../../../assets/ArrowBlackChart.png";
 import BarChart from "../../../assets/BarChart.png";
+import BG from "../../../assets/BG.png";
 
 const Frame2 = () => {
   const { ref, inView } = useInView({
@@ -12,7 +13,8 @@ const Frame2 = () => {
   });
 
   return (
-    <div className={`flex flex-col items-center p-24 ${inView ? 'animate-slideInFromBottom' : ''}`} ref={ref}>
+    <div className={`min-h-screen flex flex-col items-center p-24 ${inView ? 'animate-slideInFromBottom' : ''}`} ref={ref}
+    style={{backgroundImage: `url(${BG})`,}}>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8 w-full px-4 md:px-8">
         <div className="md:col-span-1">
           <Card
@@ -25,7 +27,7 @@ const Frame2 = () => {
             Timing="2"
           />
         </div>
-        <div className="-mt-[2.5%] md:col-span-2 flex flex-col justify-between space-y-8">
+        <div className="-mt-[9%] md:col-span-2 flex flex-col justify-between space-y-8">
           <div className="bg-gradient-to-r from-[#FDE3AD] via-[#FAB735] to-[#FAA811] rounded-3xl p-8 text-white font-bold text-center shadow-md h-full flex items-center">
             <p className="text-black text-justify">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque,
@@ -34,7 +36,7 @@ const Frame2 = () => {
               amet ea quod!
             </p>
           </div>
-          <div className="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0 md:space-x-8">
+          <div className="pt-16 flex flex-col md:flex-row justify-between space-y-8 md:space-y-0 md:space-x-8">
             <Card
               chartType={BarChart}
               BackgroundColor="#DE8D2A"

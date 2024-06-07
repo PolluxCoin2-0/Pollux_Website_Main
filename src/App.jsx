@@ -5,7 +5,7 @@ import Footer from "./layout/Footer";
 function App() {
 
   return (
-    <div className="bg-gradient-to-r from-purple-600 to-indigo-600">
+    <div className="bg-[#10022B]">
      <Router>
       <Routes>
       <Route path="/" element={<Home />} />

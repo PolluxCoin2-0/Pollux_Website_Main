@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { FaInstagram, FaFacebook, FaLinkedin, FaRegCopyright } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 import Logo from '../assets/Logo.png';
+import BG from "../assets/BG.png";
 
 const Footer = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -28,13 +29,16 @@ const Footer = () => {
   }, []);
 
   return (
-    <div className={`footer-container text-white py-12 px-24 ${isVisible ? 'animate-slideInFromLeft' : ''}`}>
-      <div className="flex flex-row items-center justify-around">
+    <div className={` footer-container text-white py-12 px-24 ${isVisible ? 'animate-slideInFromLeft' : ''}`}
+    style={{
+      backgroundImage: `url(${BG})`,
+    }}>
+      <div className="border-t-[2px] pt-6 flex flex-row items-center justify-around">
         <div className={`w-1/3 ${isVisible ? 'animate-slideInFromLeft' : ''}`}>
           <img src={Logo} alt="logo" className="w-1/2" />
         </div>
         <div className={`w-1/3 ${isVisible ? 'animate-slideInFromLeft' : ''}`}>
-          <p className="text-2xl pb-8">Pollux Coin</p>
+          <p className="text-2xl pb-8 indent-[92px]">Pollux Coin</p>
           <div className="flex items-center justify-around">
             <ul>
               <li className="py-1 cursor-pointer">Developers</li>

@@ -7,6 +7,10 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { EffectCoverflow, Pagination, Navigation } from "swiper";
 import Frame7Card from "./Frame7Card";
+import BG from "../../../assets/BG.png";
+import Slide1 from "../../../assets/slide1.png";
+import Slide2 from "../../../assets/slide2.png";
+import Slide3 from "../../../assets/slide3.png";
 
 const Frame7 = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -34,43 +38,44 @@ const Frame7 = () => {
 
   const cardsData = [
     {
-      img: "",
+      img: Slide1,
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       title: "POX SR",
     },
     {
-      img: "",
+      img: Slide2,
       desc: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       title: "POX Wallet",
     },
     {
-      img: "",
+      img: Slide3,
       desc: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
       title: "Polink",
     },
     {
-      img: "",
+      img: Slide1,
       desc: "Duis aute irure dolor in reprehenderit in voluptate velit esse.",
       title: "POX SR",
     },
     {
-      img: "",
+      img: Slide2,
       desc: "Excepteur sint occaecat cupidatat non proident, sunt in culpa.",
       title: "POX Wallet",
     },
     {
-      img: "",
+      img: Slide3,
       desc: "Quis autem vel eum iure reprehenderit qui in ea voluptate velit.",
       title: "Polink",
     },
   ];
 
   return (
-    <div className={`frame7-container flex flex-col justify-center items-center py-16 px-24 ${isVisible ? 'animate-slideInFromBottom' : ''}`}>
+    <div className={`min-h-screen frame7-container flex flex-col justify-center items-center py-16 px-24 ${isVisible ? 'animate-slideInFromBottom' : ''}`}
+    style={{backgroundImage: `url(${BG})`,}}>
       <p className="text-8xl font-bold bg-gradient-to-r from-[#FDE3AD] via-[#FAB735] to-[#FAA811] inline-block text-transparent bg-clip-text mb-12">
         POX Ecosystem
       </p>
-      <div className="carousel-wrapper px-4">
+      <div className="carousel-wrapper px-28">
         <Swiper
           effect={"coverflow"}
           grabCursor={true}

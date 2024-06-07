@@ -4,7 +4,7 @@ import Frame5Card from "./Frame5Card";
 import IncreasingGraphWithMan from "../../../assets/IncreasingGraphWithMan.png";
 import IncreasingGraph from "../../../assets/IncreasingGraph.png";
 import SettingIcon from "../../../assets/SettingIcon.png";
-import BG5 from '../../../assets/bg5.png';
+import BG5 from '../../../assets/BG45.png';
 
 const Frame5 = () => {
   const { ref: topRef, inView: inViewTop } = useInView({
@@ -19,11 +19,9 @@ const Frame5 = () => {
 
   return (
     <div
-      className="flex flex-col justify-center items-center px-24"
+      className="min-h-screen flex flex-col justify-center items-center px-24"
       style={{
         backgroundImage: `url(${BG5})`,
-        // backgroundSize: 'contain',
-        // backgroundPosition: 'center'
       }}
     >
       <p

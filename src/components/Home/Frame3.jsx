@@ -6,6 +6,7 @@ import exporting from 'highcharts/modules/exporting';
 import hollowcandlestick from 'highcharts/modules/hollowcandlestick';
 import accessibility from 'highcharts/modules/accessibility';
 import { useInView } from 'react-intersection-observer';
+import BG from "../../assets/BG.png";
 
 exporting(Highcharts);
 hollowcandlestick(Highcharts);
@@ -59,7 +60,8 @@ const Frame3 = () => {
   }, []);
 
   return (
-    <div className={`text-center px-24 ${inView ? 'animate-slideInFromLeft' : ''}`} ref={ref}>
+    <div className={`min-h-screen text-center px-24 ${inView ? 'animate-slideInFromLeft' : ''}`} ref={ref}
+    style={{backgroundImage: `url(${BG})`,}}>
       <p className="text-8xl h-28 font-bold bg-gradient-to-r from-[#FDE3AD] via-[#FAB735] to-[#FAA811] inline-block text-transparent bg-clip-text">
         POX Market Performance
       </p>
@@ -78,30 +80,30 @@ const Frame3 = () => {
           ref={chartComponentRef}
         />
         <div className='flex flex-col justify-between text-white'>
-          <div className='flex flex-col border-[1px] rounded-3xl px-16 py-5'>
+          <div className='flex flex-col border-[1px] rounded-3xl px-16 py-5 bg-[#271B3F]'>
             <p className='font-bold text-3xl'>$673653648</p>
             <p className='font-semibold text-xl'>Total Market Cap</p>
           </div>
-          <div className='flex flex-col border-[1px] rounded-3xl px-16 py-5'>
+          <div className='flex flex-col border-[1px] rounded-3xl px-16 py-5 bg-[#271B3F]'>
             <p className='font-bold text-3xl'>6736</p>
             <p className='font-semibold text-xl'>Global Rank</p>
           </div>
-          <div className='flex flex-col border-[1px] rounded-3xl px-16 py-5'>
+          <div className='flex flex-col border-[1px] rounded-3xl px-16 py-5 bg-[#271B3F]'>
             <p className='font-bold text-3xl'>67365</p>
             <p className='font-semibold text-xl'>Accounts holding POX</p>
           </div>
         </div>
       </div>
-      <div className='w-full flex flex-row justify-between text-white py-12'>
-        <div className='flex flex-col border-[1px] rounded-3xl px-16 py-5'>
+      <div className='w-full flex flex-row justify-between text-white py-12 space-x-4'>
+        <div className='w-1/3 flex flex-col border-y-[1px] border-l-[1px] rounded-l-3xl px-16 py-5 bg-[#271B3F]'>
           <p className='font-bold text-3xl'>6736</p>
           <p className='font-semibold text-xl'>Current Price</p>
         </div>
-        <div className='flex flex-col border-[1px] rounded-3xl px-16 py-5'>
+        <div className='w-1/3 flex flex-col border-y-[1px] px-16 py-5 bg-[#271B3F]'>
           <p className='font-bold text-3xl'>6736</p>
           <p className='font-semibold text-xl'>Transaction Volume (24hr)</p>
         </div>
-        <div className='flex flex-col border-[1px] rounded-3xl px-16 py-5'>
+        <div className='w-1/3 flex flex-col border-y-[1px] border-r-[1px] rounded-r-3xl px-16 py-5 bg-[#271B3F]'>
           <p className='font-bold text-3xl'>67365</p>
           <p className='font-semibold text-xl'>Transaction Count (24hr)</p>
         </div>
