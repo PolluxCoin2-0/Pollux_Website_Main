@@ -48,7 +48,7 @@
 }
 
 .swiper-slide-active .frame7-card {
-  box-shadow: -5px 0 20px -12px rgba(255, 255, 255, 0.5) inset, 5px 0 20px -12px rgba(255, 255, 255, 0.5) inset; 
+  box-shadow: -5px 0 20px -15px rgba(255, 255, 255, 0.5) inset, 5px 0 20px -15px rgba(255, 255, 255, 0.5) inset; 
   transform: scale(1.1);
 }
 

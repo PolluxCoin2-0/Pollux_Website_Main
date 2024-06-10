@@ -40,7 +40,7 @@ const Footer = () => {
         </div>
         <div className={`w-full md:w-1/3 ${isVisible ? 'animate-slideInFromLeft' : ''} mb-6 md:mb-0 text-center md:text-left`}>
           <p className="text-2xl pb-8 md:indent-[92px]">Pollux Coin</p>
-          <div className="flex flex-col md:flex-row md:items-center md:justify-around">
+          <div className="flex flex-row items-center justify-around">
             <ul className="mb-4 md:mb-0">
               <li className="py-1 cursor-pointer">Developers</li>
               <li className="py-1 cursor-pointer">Documentation</li>
