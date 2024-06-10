@@ -14,6 +14,7 @@ import Slide3 from "../../../assets/slide3.png";
 
 const Frame7 = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -94,12 +95,13 @@ const Frame7 = () => {
             prevEl: ".swiper-button-prev",
             clickable: true,
           }}
+          onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
           modules={[EffectCoverflow, Pagination, Navigation]}
           className="swiper-container"
         >
           {cardsData.map((card, index) => (
             <SwiperSlide key={index} className="carousel-slide">
-              <Frame7Card img={card.img} desc={card.desc} title={card.title} />
+              <Frame7Card img={card.img} desc={card.desc} title={card.title} isActive={index === activeIndex} />
             </SwiperSlide>
           ))}
         </Swiper>

@@ -72,7 +72,7 @@ const Frame3 = () => {
         unde sunt, nobis consequuntur. Aliquid voluptatum laboriosam explicabo
         praesentium magnam beatae mollitia voluptas?
       </p>
-      <div className='flex space-x-6'>
+      <div className='w-full flex flex-row space-x-6'>
         <HighchartsReact
           highcharts={Highcharts}
           constructorType={'stockChart'}
@@ -80,30 +80,30 @@ const Frame3 = () => {
           ref={chartComponentRef}
         />
         <div className='flex flex-col justify-between text-white'>
-          <div className='flex flex-col border-[1px] rounded-3xl px-16 py-5 bg-[#271B3F]'>
+          <div className='flex flex-col border-[1px] border-gray-700 rounded-3xl px-16 py-5 bg-[#271B3F]'>
             <p className='font-bold text-3xl'>$673653648</p>
             <p className='font-semibold text-xl'>Total Market Cap</p>
           </div>
-          <div className='flex flex-col border-[1px] rounded-3xl px-16 py-5 bg-[#271B3F]'>
+          <div className='flex flex-col border-[1px] border-gray-700 rounded-3xl px-16 py-5 bg-[#271B3F]'>
             <p className='font-bold text-3xl'>6736</p>
             <p className='font-semibold text-xl'>Global Rank</p>
           </div>
-          <div className='flex flex-col border-[1px] rounded-3xl px-16 py-5 bg-[#271B3F]'>
+          <div className='flex flex-col border-[1px] border-gray-700 rounded-3xl px-16 py-5 bg-[#271B3F]'>
             <p className='font-bold text-3xl'>67365</p>
             <p className='font-semibold text-xl'>Accounts holding POX</p>
           </div>
         </div>
       </div>
       <div className='w-full flex flex-row justify-between text-white py-12 space-x-4'>
-        <div className='w-1/3 flex flex-col border-y-[1px] border-l-[1px] rounded-l-3xl px-16 py-5 bg-[#271B3F]'>
+        <div className='w-1/3 flex flex-col border-y-[1px] border-gray-700 border-l-[1px] rounded-l-3xl px-16 py-5 bg-[#271B3F]'>
           <p className='font-bold text-3xl'>6736</p>
           <p className='font-semibold text-xl'>Current Price</p>
         </div>
-        <div className='w-1/3 flex flex-col border-y-[1px] px-16 py-5 bg-[#271B3F]'>
+        <div className='w-1/3 flex flex-col border-y-[1px] border-gray-700 px-16 py-5 bg-[#271B3F]'>
           <p className='font-bold text-3xl'>6736</p>
           <p className='font-semibold text-xl'>Transaction Volume (24hr)</p>
         </div>
-        <div className='w-1/3 flex flex-col border-y-[1px] border-r-[1px] rounded-r-3xl px-16 py-5 bg-[#271B3F]'>
+        <div className='w-1/3 flex flex-col border-y-[1px] border-gray-700 border-r-[1px] rounded-r-3xl px-16 py-5 bg-[#271B3F]'>
           <p className='font-bold text-3xl'>67365</p>
           <p className='font-semibold text-xl'>Transaction Count (24hr)</p>
         </div>

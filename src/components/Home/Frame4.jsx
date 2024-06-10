@@ -19,8 +19,9 @@ const Frame4 = () => {
       className="min-h-screen flex flex-col md:flex-row lg:flex-row items-center py-12 px-24"
       style={{
         backgroundImage: `url(${BG4})`,
-        // backgroundSize: 'contain',
-        // backgroundPosition: 'center'
+       backgroundRepeat:"no-repeat",
+       backgroundSize:'cover',
+          backgroundPositionY:"top"
       }}
     >
       <div

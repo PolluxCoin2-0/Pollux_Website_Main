@@ -27,7 +27,7 @@ const Frame2 = () => {
             Timing="2"
           />
         </div>
-        <div className="-mt-[9%] md:col-span-2 flex flex-col justify-between space-y-8">
+        <div className="-mt-[9%] md:col-span-2 flex flex-col justify-between space-y-12">
           <div className="bg-gradient-to-r from-[#FDE3AD] via-[#FAB735] to-[#FAA811] rounded-3xl p-8 text-white font-bold text-center shadow-md h-full flex items-center">
             <p className="text-black text-justify">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque,

@@ -22,6 +22,9 @@ const Frame5 = () => {
       className="min-h-screen flex flex-col justify-center items-center px-24"
       style={{
         backgroundImage: `url(${BG5})`,
+        backgroundRepeat:"no-repeat",
+       backgroundSize:'cover',
+       backgroundPositionY:"center"
       }}
     >
       <p

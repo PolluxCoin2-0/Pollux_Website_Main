@@ -16,7 +16,7 @@ const Frame1 = () => {
   return (
     <div className="fram1-bg px-12 min-h-screen">
     <Navbar/>
-    <div className=' flex flex-col md:flex-row lg:flex-row items-center border-x-[1px] border-[#564E66] px-12'>
+    <div className=' flex flex-col md:flex-row lg:flex-row items-center border-l-[2px] border-r-[2.5px] border-[#393555] px-12'>
       <div
         className={`w-1/2 ${leftInView ? 'animate-slideInFromLeft' : ''}`} 
         ref={leftRef}

@@ -30,7 +30,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0.5;
+  opacity: 0.8;
   transition: transform 0.5s ease, opacity 0.5s ease, border-radius 0.5s ease;
 }
 
@@ -78,6 +78,29 @@
 .highcharts-contextbutton {
   display: none !important;
 }
+
+.highcharts-background{
+  fill: #271B3F;
+}
+
+.highcharts-credits{
+  display: none;
+}
+
+.highcharts-button-box{
+  fill: #342357;
+}
+
+.highcharts-button-box + text {
+  fill: white !important;
+}
+
+.highcharts-button-pressed text {
+  fill: #5304f3 !important;
+}
+
+
+/* Animation Css */
 
 @keyframes slideInFromLeft {
   0% {
@@ -139,16 +162,17 @@
   animation: slideInFromTop 1s ease-out forwards;
 }
 
-.fram1-bg{
+.fram1-bg {
   background-image: url("./assets/Glow.png");
   background-size: cover; 
-  background-position: center;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
 }
 
 .navbar-react{
   background-image: url("./assets/Rectangle.png");
   background-size: cover; 
-  background-position: -0px 20px;
+  background-position: -0.5px 20px;
   background-repeat: no-repeat;
 }
 
