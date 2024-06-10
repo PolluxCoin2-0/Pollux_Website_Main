@@ -39,7 +39,7 @@ const Navbar = () => {
         </div>
       </nav>
 
-      <div className="pt-4 flex justify-between items-center relative">
+      <div className="md:hidden lg:hidden pt-4 flex justify-between items-center relative">
         <div className="flex items-center space-x-2">
           <img src={LogoImage} alt="Logo" className="h-12 w-auto" />
           <p className="text-white text-2xl font-semibold cursor-pointer">
