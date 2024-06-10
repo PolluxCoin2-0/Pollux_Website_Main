@@ -71,18 +71,31 @@ const Frame7 = () => {
   ];
 
   return (
-    <div className={`min-h-screen frame7-container flex flex-col justify-center items-center py-16 px-24 ${isVisible ? 'animate-slideInFromBottom' : ''}`}
+    <div className={`md:min-h-screen lg:min-h-screen frame7-container flex flex-col justify-center items-center py-16 px-0 md:px-24 lg:px-24 ${isVisible ? 'animate-slideInFromBottom' : ''}`}
     style={{backgroundImage: `url(${BG})`,}}>
-      <p className="text-8xl font-bold bg-gradient-to-r from-[#FDE3AD] via-[#FAB735] to-[#FAA811] inline-block text-transparent bg-clip-text mb-12">
+      <p className="text-4xl md:text-8xl lg:text-8xl font-bold bg-gradient-to-r from-[#FDE3AD] via-[#FAB735] to-[#FAA811] inline-block text-transparent bg-clip-text mb-12">
         POX Ecosystem
       </p>
-      <div className="carousel-wrapper px-28">
+      <div className="carousel-wrapper px-2 md:px-28 lg:px-28">
         <Swiper
           effect={"coverflow"}
           grabCursor={true}
           centeredSlides={true}
           loop={true}
-          slidesPerView={3}
+          breakpoints={{
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 50,
+            },
+            375: {
+              slidesPerView: 1,
+              spaceBetween: 0,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 0,
+            },
+          }}
           coverflowEffect={{
             rotate: 0,
             stretch: 0,

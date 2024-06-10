@@ -16,7 +16,7 @@ const Frame4 = () => {
 
   return (
     <div
-      className="min-h-screen flex flex-col md:flex-row items-center py-12 px-6 md:px-12 lg:px-24"
+      className="md:min-h-screen lg:min-h-screen flex flex-col md:flex-row items-center py-12 px-6 md:px-12 lg:px-24"
       style={{
         backgroundImage: `url(${BG4})`,
         backgroundRepeat: "no-repeat",

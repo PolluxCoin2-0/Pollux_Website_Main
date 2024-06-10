@@ -13,7 +13,7 @@ const Frame2 = () => {
   });
 
   return (
-    <div className={`min-h-screen flex flex-col justify-center px-24 pt-24 ${inView ? 'animate-slideInFromBottom' : ''}`} ref={ref}
+    <div className={`min-h-screen flex flex-col justify-center  px-6 md:px-12 lg:px-24 pt-0 md:pt-24 lg:pt-24 ${inView ? 'animate-slideInFromBottom' : ''}`} ref={ref}
     style={{backgroundImage: `url(${BG})`,}}>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8 w-full px-4 md:px-8">
         <div className="md:col-span-1">
@@ -36,7 +36,7 @@ const Frame2 = () => {
               amet ea quod!
             </p>
           </div>
-          <div className="pt-16 flex flex-col md:flex-row justify-between space-y-8 md:space-y-0 md:space-x-8">
+          <div className="pt-16 flex flex-col md:flex-row justify-between space-y-20 md:space-y-0 md:space-x-8">
             <Card
               chartType={BarChart}
               BackgroundColor="#DE8D2A"
@@ -57,7 +57,7 @@ const Frame2 = () => {
             />
           </div>
         </div>
-        <div className="md:col-span-1">
+        <div className="md:col-span-1 mt-16 md:mt-0 lg:mt-0 mb-10 md:mb-0 lg:mb-0">
           <Card
             chartType={ArrowBlackChart}
             BackgroundColor="#F3E48D"

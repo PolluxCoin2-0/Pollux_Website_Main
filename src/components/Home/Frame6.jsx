@@ -17,12 +17,12 @@ const Frame6 = () => {
 
   return (
     <div 
-      className="min-h-screen flex flex-col md:flex-row items-center py-12 px-6 md:px-12 lg:px-24"
+      className="md:min-h-screen lg:min-h-screen flex flex-col md:flex-row items-center py-12 px-6 md:px-12 lg:px-24"
       style={{ backgroundImage: `url(${BG})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}
     >
       <div
         ref={leftRef}
-        className={`w-full md:w-1/2 px-4 md:px-8 lg:px-12 ${inViewLeft ? 'animate-slideInFromLeft' : ''}`}
+        className={`w-full text-center md:text-left lg:text-left md:w-1/2 px-4 md:px-8 lg:px-12 ${inViewLeft ? 'animate-slideInFromLeft' : ''}`}
       >
         <p className="text-4xl md:text-6xl lg:text-8xl font-bold bg-gradient-to-r from-[#FDE3AD] via-[#FAB735] to-[#FAA811] inline-block text-transparent bg-clip-text">
           POX NETWORK

@@ -19,7 +19,7 @@ const Frame5 = () => {
 
   return (
     <div
-      className="min-h-screen flex flex-col justify-center items-center px-24"
+      className="min-h-screen flex flex-col justify-center items-center px-6 md:px-12 lg:px-24"
       style={{
         backgroundImage: `url(${BG5})`,
         backgroundRepeat:"no-repeat",
@@ -29,7 +29,7 @@ const Frame5 = () => {
     >
       <p
         ref={topRef}
-        className={`text-8xl h-28 font-bold bg-gradient-to-r from-[#FDE3AD] via-[#FAB735] to-[#FAA811] inline-block text-transparent bg-clip-text pt-6 ${inViewTop ? 'animate-slideInFromTop' : ''}`}
+        className={`text-4xl md:text-8xl lg:text-8xl h-28 font-bold bg-gradient-to-r from-[#FDE3AD] via-[#FAB735] to-[#FAA811] inline-block text-transparent bg-clip-text pt-6 ${inViewTop ? 'animate-slideInFromTop' : ''}`}
       >
         POXPROTOCOL Features
       </p>
@@ -45,7 +45,7 @@ const Frame5 = () => {
       </p>
       <div
         ref={bottomRef}
-        className={`w-full flex items-start justify-around ${inViewBottom ? 'animate-slideInFromBottom' : ''}`}
+        className={`w-full flex flex-col md:flex-row lg:flex-row items-start justify-around ${inViewBottom ? 'animate-slideInFromBottom' : ''}`}
       >
         <Frame5Card img={IncreasingGraphWithMan} desc="HIGH-THROUGHPUT" />
         <Frame5Card img={IncreasingGraph} desc="HIGH-SCALABILITY" className="middle-card" />
