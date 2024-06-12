@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Frame 5 CSS */
+
 .middle-card .rounded-t-3xl {
   padding-top: 8px; /* Adjust the padding as needed */
   padding-bottom: 8px; /* Adjust the padding as needed */
@@ -75,32 +81,8 @@
 
 /* Chart CSS */
 
-.highcharts-root {
-  border-radius: 24px;
-}
-
-.highcharts-contextbutton {
-  display: none !important;
-}
-
-.highcharts-background{
-  fill: #271B3F;
-}
-
-.highcharts-credits{
-  display: none;
-}
-
-.highcharts-button-box{
-  fill: #342357;
-}
-
-.highcharts-button-box + text {
-  fill: white !important;
-}
-
-.highcharts-button-pressed text {
-  fill: #5304f3 !important;
+.am5-layer-30 + text{
+  fill: white;
 }
 
 

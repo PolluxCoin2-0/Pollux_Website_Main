@@ -1,16 +1,6 @@
-import { useEffect, useRef, useState } from 'react';
-import Highcharts from 'highcharts/highstock';
-import HighchartsReact from 'highcharts-react-official';
-import axios from 'axios';
-import exporting from 'highcharts/modules/exporting';
-import hollowcandlestick from 'highcharts/modules/hollowcandlestick';
-import accessibility from 'highcharts/modules/accessibility';
 import { useInView } from 'react-intersection-observer';
-import BG from "../../assets/BG.png";
-
-exporting(Highcharts);
-hollowcandlestick(Highcharts);
-accessibility(Highcharts);
+import BG from "../../../assets/BG.png";
+import Frame3Chart from './Frame3Chart';
 
 const Frame3 = () => {
   const { ref, inView } = useInView({
@@ -18,46 +8,6 @@ const Frame3 = () => {
     threshold: 0.1,
   });
 
-  const chartComponentRef = useRef(null);
-  const [chartOptions, setChartOptions] = useState({
-    chart: {
-      height: 400,
-      minWidth: 310,
-    },
-    rangeSelector: {
-      selected: 1,
-    },
-    navigator: {
-      series: {
-        color: Highcharts.getOptions().colors[0],
-      },
-    },
-    series: [],
-  });
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get('https://demo-live-data.highcharts.com/aapl-ohlcv.json');
-        const data = response.data;
-
-        setChartOptions((prevOptions) => ({
-          ...prevOptions,
-          series: [
-            {
-              type: 'hollowcandlestick',
-              name: 'Hollow Candlestick',
-              data: data,
-            },
-          ],
-        }));
-      } catch (error) {
-        console.error('Error fetching the data', error);
-      }
-    };
-
-    fetchData();
-  }, []);
 
   return (
     <div className={`min-h-screen text-center px-6 md:px-12 lg:px-24 ${inView ? 'animate-slideInFromLeft' : ''}`} ref={ref}
@@ -73,12 +23,7 @@ const Frame3 = () => {
         praesentium magnam beatae mollitia voluptas?
       </p>
       <div className='w-full flex flex-col md:flex-row lg:flex-row md:space-x-6 lg:space-x-6'>
-        <HighchartsReact
-          highcharts={Highcharts}
-          constructorType={'stockChart'}
-          options={chartOptions}
-          ref={chartComponentRef}
-        />
+        <Frame3Chart/>
         <div className='flex flex-col space-y-6 md:space-y-0 lg:space-y-0 justify-between text-white'>
           <div className='mt-6 md:mt-0 lg:mt-0 flex flex-col border-[1px] border-gray-700 rounded-3xl px-16 py-5 bg-[#271B3F]'>
             <p className='font-bold text-3xl'>$673653648</p>

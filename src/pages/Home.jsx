@@ -1,6 +1,6 @@
 import Frame1 from "../components/Home/Frame1"
 import Frame2 from "../components/Home/Frame2/Frame2"
-import Frame3 from "../components/Home/Frame3"
+import Frame3 from "../components/Home/Frame3/Frame3"
 import Frame4 from "../components/Home/Frame4"
 import Frame5 from "../components/Home/Frame5/Frame5"
 import Frame6 from "../components/Home/Frame6"
