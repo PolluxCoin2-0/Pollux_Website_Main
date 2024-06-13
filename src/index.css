@@ -160,5 +160,11 @@ body {
   background-size: cover; 
   background-position: -0.5px 20px;
   background-repeat: no-repeat;
+ 
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .navbar-react{
+    padding-top: 3rem;
+  }
+}

@@ -29,7 +29,7 @@ const Frame5 = () => {
     >
       <p
         ref={topRef}
-        className={`text-4xl md:text-8xl lg:text-8xl h-28 font-bold bg-gradient-to-r from-[#FDE3AD] via-[#FAB735] to-[#FAA811] inline-block text-transparent bg-clip-text pt-6 ${inViewTop ? 'animate-slideInFromTop' : ''}`}
+        className={`text-center text-4xl md:text-8xl lg:text-8xl h-28 font-bold bg-gradient-to-r from-[#FDE3AD] via-[#FAB735] to-[#FAA811] inline-block text-transparent bg-clip-text pt-6 ${inViewTop ? 'animate-slideInFromTop' : ''}`}
       >
         POXPROTOCOL Features
       </p>
