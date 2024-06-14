@@ -24,7 +24,7 @@ const Navbar = () => {
           <p className="text-white font-semibold text-2xl cursor-pointer ">
             Developers
           </p>
-          <div className="flex items-center space-x-2 -mt-[2rem] mr-20">
+          <div className="flex items-center space-x-2 -mt-[4rem] mr-20">
             <img src={LogoImage} alt="Logo" className="h-16 w-auto" />
             <p className="text-white text-3xl font-semibold cursor-pointer">
               Polluxcoin
