@@ -29,13 +29,13 @@ const Frame5 = () => {
     >
       <p
         ref={topRef}
-        className={`text-center text-4xl md:text-8xl lg:text-8xl h-28 font-bold bg-gradient-to-r from-[#FDE3AD] via-[#FAB735] to-[#FAA811] inline-block text-transparent bg-clip-text pt-6 ${inViewTop ? 'animate-slideInFromTop' : ''}`}
+        className={`text-center text-4xl md:text-8xl lg:text-6xl font-bold bg-gradient-to-r from-[#FDE3AD] via-[#FAB735] to-[#FAA811] inline-block text-transparent bg-clip-text pt-6 ${inViewTop ? 'animate-slideInFromTop' : ''}`}
       >
         POXPROTOCOL Features
       </p>
       <p
         ref={topRef}
-        className={`text-white py-12 text-lg ${inViewTop ? 'animate-slideInFromTop' : ''}`}
+        className={`text-white pt-6 pb-12 text-lg ${inViewTop ? 'animate-slideInFromTop' : ''}`}
       >
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, eum
         excepturi magnam officia aut obcaecati dolore maxime temporibus
