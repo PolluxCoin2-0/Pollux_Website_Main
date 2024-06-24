@@ -1,9 +1,8 @@
-import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import Frame5Card from "./Frame5Card";
 import IncreasingGraphWithMan from "../../../assets/IncreasingGraphWithMan.png";
 import IncreasingGraph from "../../../assets/IncreasingGraph.png";
-import SettingIcon from "../../../assets/SettingIcon.png";
+import SettingIcon2 from "../../../assets/SettingIcon2.png";
 import BG5 from '../../../assets/BG45.png';
 
 const Frame5 = () => {
@@ -48,8 +47,8 @@ const Frame5 = () => {
         className={`w-full flex flex-col md:flex-row lg:flex-row items-start justify-around ${inViewBottom ? 'animate-slideInFromBottom' : ''}`}
       >
         <Frame5Card img={IncreasingGraphWithMan} desc="HIGH-THROUGHPUT" />
-        <Frame5Card img={IncreasingGraph} desc="HIGH-SCALABILITY" className="middle-card" />
-        <Frame5Card img={SettingIcon} desc="HIGH-AVAILABILITY" />
+        <Frame5Card img={IncreasingGraph} desc="HIGH-SCALABILITY" />
+        <Frame5Card img={SettingIcon2} desc="HIGH-AVAILABILITY" />
       </div>
     </div>
   );

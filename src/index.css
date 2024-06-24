@@ -6,17 +6,6 @@ body {
   font-family: 'Josefin Sans', sans-serif;
 }
 
-/* Frame 5 CSS */
-
-.middle-card .rounded-t-3xl {
-  padding-top: 8px; /* Adjust the padding as needed */
-  padding-bottom: 8px; /* Adjust the padding as needed */
-}
-
-.middle-card .rounded-b-3xl {
-  padding-bottom: 8px; /* Adjust the padding as needed */
-}
-
 /* Carousel CSS */
 
 .frame7-container {

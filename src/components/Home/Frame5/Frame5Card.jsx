@@ -1,6 +1,6 @@
-const Frame5Card = ({ img, desc, className }) => {
+const Frame5Card = ({ img, desc }) => {
   return (
-    <div className={`flex flex-col text-center ${className}`}>
+    <div className={`flex flex-col text-center`}>
       <div className="border-1 rounded-3xl bg-gradient-to-r from-[#FDE3AD] via-[#FAB735] to-[#FAA811]
        p-1 mx-4">
         <div className="bg-[#10022A] rounded-t-3xl flex justify-center py-12 back">
