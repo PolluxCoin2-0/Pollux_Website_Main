@@ -43,8 +43,9 @@ const Footer = () => {
           <div className="flex flex-row items-center justify-around">
             <ul className="mb-4 md:mb-0">
             <a href='https://pox-chain.gitbook.io/doc'><li className="py-1 cursor-pointer">Developers</li></a>
-              <li className="py-1 cursor-pointer">Technology</li>
               <li className="py-1 cursor-pointer">Partners</li>
+              <li className="py-1 cursor-pointer">Bug Bounty Program</li>
+              <li className="py-1 cursor-pointer">Contact us</li>
               {/* <li className="py-1 cursor-pointer">Documentation</li> */}
               {/* <li className="py-1 cursor-pointer">Grants</li> */}
             </ul>
@@ -73,7 +74,7 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row justify-between mt-8 text-center md:text-left">
         <div className={`${isVisible ? 'animate-slideInFromLeft' : ''} mb-4 md:mb-0`}>
           <p className="flex items-center justify-center md:justify-start">
-            Copyright <span className="mx-1"><FaRegCopyright /></span> 2023 Conflux. All Rights Reserved
+            Copyright <span className="mx-1"><FaRegCopyright /></span> 2024 Conflux. All Rights Reserved
           </p>
         </div>
         <div className={`flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 ${isVisible ? 'animate-slideInFromRight' : ''}`}>

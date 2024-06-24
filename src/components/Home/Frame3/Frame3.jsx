@@ -44,12 +44,8 @@ const Frame3 = () => {
        from-[#FDE3AD] via-[#FAB735] to-[#FAA811] inline-block text-transparent bg-clip-text">
         POX Market Performance
       </p>
-      <p className="text-white text-justify pb-12 text-lg">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, eum
-        excepturi magnam officia aut obcaecati dolore maxime temporibus
-        voluptatum harum culpa praesentium placeat optio fuga adipisci vitae
-        unde sunt, nobis consequuntur. Aliquid voluptatum laboriosam explicabo
-        praesentium magnam beatae mollitia voluptas?
+      <p className="text-white text-center pb-12 text-2xl font-semibold">
+      POX, one of the most promising cryptocurrencies, is listed on Coinstore, Koinbx, and LBank exchanges, connecting millions of value investors worldwide.
       </p>
 
      

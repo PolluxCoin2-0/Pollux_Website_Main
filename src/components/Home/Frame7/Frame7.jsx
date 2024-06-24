@@ -40,33 +40,39 @@ const Frame7 = () => {
   const cardsData = [
     {
       img: Slide1,
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      desc: "POX SRs are elected through decentralized voting and are responsible for the on-chain governance of the POX community. By participating in SR voting, members can earn rewards and contribute to the growth of the POX ecosystem.",
       title: "POX SR",
+      link:" https://www.poxscan.io/governance/super-representatives"
     },
     {
       img: Slide2,
-      desc: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      desc: "A groundbreaking solution created by the exceptional developers of the POX community, this state-of-the-art wallet has gained attention for its innovative features. It has also formed strong partnerships with several world-class wallets, ensuring a seamless and secure digital asset experience.",
       title: "POX Wallet",
+      link:"https://poxscan.io/download-polink"
     },
     {
       img: Slide3,
-      desc: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+      desc: "This is an official Oracle project operating on the Pollux network, securely providing real-world data to on-chain smart contracts.",
       title: "Polink",
+      link:"https://chromewebstore.google.com/detail/polink/afeibjjgfjfphjedhdjgbgbhpomolbjm"
     },
     {
       img: Slide1,
-      desc: "Duis aute irure dolor in reprehenderit in voluptate velit esse.",
-      title: "POX SR",
+      desc: "The pioneering blockchain explorer for POX, providing comprehensive on-chain data queries and effortless token creation support.",
+      title: "POX Scan",
+      link:"https://www.poxscan.io/"
     },
     {
       img: Slide2,
-      desc: "Excepteur sint occaecat cupidatat non proident, sunt in culpa.",
-      title: "POX Wallet",
+      desc: "Unlock the Future of Development with POX DApps: Minimal Gas Fees and Lightning-Fast Transactions!",
+      title: "UVISWAP",
+      link:"https://uviswap.org/"
     },
     {
       img: Slide3,
-      desc: "Quis autem vel eum iure reprehenderit qui in ea voluptate velit.",
-      title: "Polink",
+      desc: "A stablecoin backed by Pollux coin reserves, offering quick issuance and low transaction fees. From day one, it has captivated users with its unparalleled popularity and reliability.",
+      title: "PRC-20 USDX",
+      link:"https://poxusdx.com/ "
     },
   ];
 

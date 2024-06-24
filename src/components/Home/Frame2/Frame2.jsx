@@ -57,13 +57,10 @@ const Frame2 = () => {
         <div className="-mt-[9%] md:col-span-2 flex flex-col justify-between space-y-12">
           <div className="bg-gradient-to-r from-[#FDE3AD] via-[#FAB735] to-[#FAA811] rounded-3xl p-8 text-white font-bold text-center shadow-md h-full flex items-center">
             <p className="text-black text-justify">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque,
-              numquam. Nobis quas, repudiandae praesentium in atque, sunt
-              necessitatibus distinctio cum quod et, facere ipsam sed. Rerum enim
-              amet ea quod!
+            With over 29.4k accounts and more than 300,000 transactions, POX is the fastest-growing chain.
             </p>
           </div>
-          <div className="pt-12 md:pt-8 lg:pt-8 xl:pt-12 2xl:pt-12 flex flex-col md:flex-row justify-between space-y-20 md:space-y-0 md:space-x-8">
+          <div className="pt-12 flex flex-col md:flex-row justify-between space-y-20 md:space-y-0 md:space-x-8">
             <Card
               chartType={BarChart}
               BackgroundColor="#DE8D2A"

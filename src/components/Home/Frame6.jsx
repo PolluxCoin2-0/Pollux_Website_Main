@@ -25,17 +25,14 @@ const Frame6 = () => {
         className={`w-full text-center md:text-left lg:text-left md:w-1/2 px-4 md:px-8 lg:px-12 ${inViewLeft ? 'animate-slideInFromLeft' : ''}`}
       >
         <p className="text-4xl md:text-6xl lg:text-8xl font-bold bg-gradient-to-r from-[#FDE3AD] via-[#FAB735] to-[#FAA811] inline-block text-transparent bg-clip-text">
-          POX NETWORK
+          UV NETWORK
         </p>
         <p className="text-white text-base md:text-lg text-justify py-4 md:py-6 lg:py-10">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, vero
-          rem! Suscipit, doloribus pariatur veritatis expedita repudiandae
-          voluptatem perspiciatis provident at voluptatibus inventore. Possimus
-          distinctio sequi, commodi voluptatibus nulla odio!
+        DAppChain is a POX sidechain project designed to enable DApps to run on POX with reduced energy consumption, increased speed, and improved security. Its goal is to offer unlimited capacity for the POX main network.
         </p>
-        <button className="bg-gradient-to-r from-[#FDE3AD] to-[#FAA811] rounded-3xl px-3 py-2 md:px-4 md:py-3 font-bold">
+       <a href="https://uviswap.org"> <button className="bg-gradient-to-r from-[#FDE3AD] to-[#FAA811] rounded-3xl px-3 py-2 md:px-4 md:py-3 font-bold">
           Learn more
-        </button>
+        </button></a>
       </div>
       <div
         ref={rightRef}
