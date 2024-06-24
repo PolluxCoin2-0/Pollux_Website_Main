@@ -9,7 +9,7 @@ const Card = ({ chartType, BackgroundColor, BoldNumber, Percentage, ArrowColor, 
       >
         <img src={chartType} alt="" className="w-full h-auto" />
       </div>
-      <div className="pt-28 md:pt-28 lg:pt-16 xl:pt-24 2xl:pt-32 flex flex-col justify-between h-full">
+      <div className="pt-28 md:pt-28 lg:pt-20 xl:pt-24 2xl:pt-32 flex flex-col justify-between h-full">
         <div>
           <p className="font-bold text-black text-2xl">{Description==="Transfer Amount of Core Tokens"?"$ ":""}{BoldNumber}</p>
           <p className="py-2 text-gray-700">{Description}</p>
@@ -18,12 +18,12 @@ const Card = ({ chartType, BackgroundColor, BoldNumber, Percentage, ArrowColor, 
             <p className="ml-2">{Percentage}% increase <span className="text-gray-500">in today</span></p>
           </div>
         </div>
-        <div className="border-t mt-4 pt-2 text-gray-600 text-sm">
+        {/* <div className="border-t mt-4 pt-2 text-gray-600 text-sm">
           <div className="flex items-center">
             <FaRegClock />
             <p className="ml-2">{Timing} sec ago</p>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
