@@ -31,7 +31,7 @@ const Navbar = () => {
               Ecosystem
             </p>
             {isEcosystemOpen && (
-              <div className="absolute left-0 mt-2">
+              <div className="absolute left-0 mt-2 z-20">
                 <ul className="bg-[#230C44] rounded-md shadow-lg px-10 py-2 transition transform duration-300 ease-out opacity-100 translate-y-0 text-white">
                   <li className="py-1">POX SR</li>
                   <li className="py-1">Wallet</li>
