@@ -52,13 +52,11 @@ const Frame3 = () => {
         praesentium magnam beatae mollitia voluptas?
       </p>
 
-      {/* // <div className='w-full flex flex-col md:flex-row lg:flex-row md:space-x-6 lg:space-x-6'>
      
-      //   <div className='flex flex-col space-y-6 md:space-y-0 lg:space-y-0 justify-around text-white'> */}
 
       <div className='whitespace-nowrap flex flex-col md:flex-row lg:flex-row md:space-x-6 lg:space-x-6'>
       <Frame3Chart data={chartData}/>
-        <div className='flex flex-col space-y-6 md:space-y-28 lg:space-y-28 text-white'>
+      <div className='flex flex-col space-y-6 md:space-y-0 lg:space-y-0 justify-around text-white'>
 
           <div className='mt-6 md:mt-0 lg:mt-0 flex flex-col border-[1px] border-gray-700 rounded-3xl px-16 py-5 bg-[#271B3F]'>
             <p className='font-bold text-3xl'>${blockHeightData?.poxMarketCap && formatNumberWithCommas(parseInt(blockHeightData?.poxMarketCap))}</p>
