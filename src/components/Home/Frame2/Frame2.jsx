@@ -54,7 +54,7 @@ const Frame2 = () => {
             Timing="2"
           />
         </div>
-        <div className="-mt-[9%] md:col-span-2 flex flex-col justify-between space-y-12">
+        <div className="-mt-[7%] md:col-span-2 flex flex-col justify-between space-y-12">
           <div className="bg-gradient-to-r from-[#FDE3AD] via-[#FAB735] to-[#FAA811] rounded-3xl p-8 text-white font-bold text-center shadow-md h-full flex items-center">
             <p className="text-black text-justify">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque,
@@ -63,7 +63,7 @@ const Frame2 = () => {
               amet ea quod!
             </p>
           </div>
-          <div className="pt-16 flex flex-col md:flex-row justify-between space-y-20 md:space-y-0 md:space-x-8">
+          <div className="pt-8 flex flex-col md:flex-row justify-between space-y-20 md:space-y-0 md:space-x-8">
             <Card
               chartType={BarChart}
               BackgroundColor="#DE8D2A"
