@@ -9,10 +9,10 @@ const Card = ({ chartType, BackgroundColor, BoldNumber, Percentage, ArrowColor, 
       >
         <img src={chartType} alt="" className="w-full h-auto" />
       </div>
-      <div className="pt-28 md:pt-28 lg:pt-20 xl:pt-24 2xl:pt-32 flex flex-col justify-between h-full">
+      <div className="pt-28 md:pt-16 lg:pt-20 xl:pt-24 2xl:pt-32 flex flex-col justify-between h-full">
         <div>
-          <p className="font-bold text-black text-2xl">{Description==="Transfer Amount of Core Tokens"?"$ ":""}{BoldNumber}</p>
-          <p className="py-2 text-gray-700">{Description}</p>
+          <p className="font-bold text-black text-2xl whitespace-nowrap">{Description==="Transfer Amount of Core Tokens"?"$ ":""}{BoldNumber}</p>
+          <p className="py-2 text-gray-700 ">{Description}</p>
           <div className="flex items-center text-green-500">
             <FaArrowUpLong color={ArrowColor} />
             <p className="ml-2">{Percentage}% increase <span className="text-gray-500">in today</span></p>
