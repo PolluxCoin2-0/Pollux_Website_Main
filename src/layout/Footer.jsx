@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { FaInstagram, FaFacebook, FaLinkedin, FaRegCopyright } from 'react-icons/fa';
+import { FaInstagram, FaFacebook, FaLinkedin, FaRegCopyright,FaDiscord,FaTelegram  } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 import Logo from '../assets/Logo.png';
 import BG from "../assets/BG.png";
@@ -42,28 +42,31 @@ const Footer = () => {
           <p className="text-2xl pb-8 md:indent-[92px]">Pollux Coin</p>
           <div className="flex flex-row items-center justify-around">
             <ul className="mb-4 md:mb-0">
-              <li className="py-1 cursor-pointer">Developers</li>
-              <li className="py-1 cursor-pointer">Documentation</li>
+            <a href='https://pox-chain.gitbook.io/doc'><li className="py-1 cursor-pointer">Developers</li></a>
               <li className="py-1 cursor-pointer">Technology</li>
-              <li className="py-1 cursor-pointer">Grants</li>
               <li className="py-1 cursor-pointer">Partners</li>
+              {/* <li className="py-1 cursor-pointer">Documentation</li> */}
+              {/* <li className="py-1 cursor-pointer">Grants</li> */}
             </ul>
             <ul>
+             <a href=' https://www.polluxcoin.info/whitepaper.pdf'> <li className="py-1 cursor-pointer">White Paper</li></a>
               <li className="py-1 cursor-pointer">Educational</li>
-              <li className="py-1 cursor-pointer">Initiatives</li>
-              <li className="py-1 cursor-pointer">News Feed</li>
+             <a href='https://medium.com/@polluxchainofficial'> <li className="py-1 cursor-pointer">News Feed</li></a>
               <li className="py-1 cursor-pointer">About</li>
-              <li className="py-1 cursor-pointer">Team</li>
+              {/* <li className="py-1 cursor-pointer">Initiatives</li> */}
+              {/* <li className="py-1 cursor-pointer">Team</li> */}
             </ul>
           </div>
         </div>
         <div className={`w-full md:w-1/3 flex flex-col ${isVisible ? 'animate-slideInFromRight' : ''} text-center md:text-right`}>
           <p className="pb-8 text-2xl">JOIN US</p>
           <div className="flex space-x-4 justify-center md:justify-end cursor-pointer">
-            <FaInstagram size={28} />
+           <a href='https://www.instagram.com/polluxchainofficial/ '> <FaInstagram size={28} /></a>
             <FaFacebook size={28} />
-            <FaXTwitter size={28} />
+           <a href='https://x.com/polluxcoin1'><FaXTwitter size={28} /></a>
             <FaLinkedin size={28} />
+            <FaDiscord size={28}/>
+           <a href='https://t.me/polluxchainDAO'> <FaTelegram  size={28}/></a>
           </div>
         </div>
       </div>

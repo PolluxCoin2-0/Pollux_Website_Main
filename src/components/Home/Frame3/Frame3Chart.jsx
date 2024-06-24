@@ -4,36 +4,8 @@ import * as am5xy from "@amcharts/amcharts5/xy";
 import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
 import am5themes_Responsive from "@amcharts/amcharts5/themes/Responsive";
 
-const Frame3Chart = () => {
+const Frame3Chart = ({ data }) => {
   useEffect(() => {
-    // Function to generate data
-    var date = new Date();
-    date.setHours(0, 0, 0, 0);
-    var value = 100;
-
-    function generateData() {
-      value = Math.round(Math.random() * 10 - 5 + value);
-      am5.time.add(date, "day", 1);
-      return {
-        date: date.getTime(),
-        value: value,
-        open: value - Math.round(Math.random() * 10),
-        close: value + Math.round(Math.random() * 10),
-        high: value + Math.round(Math.random() * 20),
-        low: value - Math.round(Math.random() * 20),
-      };
-    }
-
-    function generateDatas(count) {
-      var data = [];
-      for (var i = 0; i < count; ++i) {
-        data.push(generateData());
-      }
-      return data;
-    }
-
-    var data = generateDatas(100);
-
     // Root element
     var root = am5.Root.new("chartdiv");
     root._logo.dispose();
@@ -42,6 +14,7 @@ const Frame3Chart = () => {
       am5themes_Responsive.new(root),
     ]);
     root.interfaceColors.set("grid", am5.color("#FFFFFF"));
+
     // Chart
     var chart = root.container.children.push(
       am5xy.XYChart.new(root, {
@@ -170,7 +143,7 @@ const Frame3Chart = () => {
     return () => {
       root.dispose();
     };
-  }, []);
+  }, [data]); // Run the effect when data changes
 
   return <div id="chartdiv" style={{ width: "100%", height: "600px" }}></div>;
 };
