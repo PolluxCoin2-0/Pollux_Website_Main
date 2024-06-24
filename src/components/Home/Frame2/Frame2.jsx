@@ -63,7 +63,7 @@ const Frame2 = () => {
               amet ea quod!
             </p>
           </div>
-          <div className="pt-12 flex flex-col md:flex-row justify-between space-y-20 md:space-y-0 md:space-x-8">
+          <div className="pt-12 md:pt-8 lg:pt-8 xl:pt-12 2xl:pt-12 flex flex-col md:flex-row justify-between space-y-20 md:space-y-0 md:space-x-8">
             <Card
               chartType={BarChart}
               BackgroundColor="#DE8D2A"
