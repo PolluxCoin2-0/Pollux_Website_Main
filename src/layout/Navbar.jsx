@@ -51,7 +51,7 @@ const Navbar = () => {
               Polluxcoin
             </p>
           </div>
-          <a href="https://poxscan.io/">
+          <a href="https://poxscan.io/token/pox">
           <p className="text-white font-semibold text-2xl cursor-pointer ">
             Coin
           </p></a>
