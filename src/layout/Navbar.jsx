@@ -18,7 +18,7 @@ const Navbar = () => {
     <>
       <nav
         ref={topRef}
-        className={`hidden md:block lg:block navbar-react pt-6 ${
+        className={`hidden md:block lg:block navbar-react pt-16 ${
           inViewTop ? "animate-slideInFromTop" : ""
         } `}
       >
@@ -44,7 +44,7 @@ const Navbar = () => {
           <p className="text-white font-semibold text-2xl cursor-pointer ">
             Developers
           </p>
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-2 -mt-[2rem] mr-32">
             <img src={LogoImage} alt="Logo" className="h-16 w-auto" />
             <p className="text-white text-3xl mt-2 font-semibold cursor-pointer">
               Polluxcoin
