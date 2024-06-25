@@ -8,7 +8,7 @@ const CardComponent = ({img, title,readmorelink,desc}) => {
     <div className="max-w-sm bg-[#1B043B] border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <a href="#">
         <img
-          className="rounded-t-lg h-48 w-full"
+          className="rounded-t-lg h-48 w-full object-fill"
           src={img}
           alt={title}
         />
@@ -72,52 +72,52 @@ const Frame4 = () => {
       <p className="pb-12 text-center text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#FDE3AD] via-[#FAB735] to-[#FAA811] text-transparent bg-clip-text">
           Insights
         </p>
-        <div className="flex flex-col md:flex-row justify-between items-center">
+        <div className="flex flex-col md:flex-row md:justify-between md:items-center space-y-8 md:space-y-0 md:space-x-4">
       <div
-        className={` ${inViewLeft ? "animate-slideInFromLeft" : ""}`}
+        className={`w-full md:w-1/2 lg:w-1/4 ${inViewLeft ? "animate-slideInFromLeft" : ""}`}
         ref={leftRef}
       >
         <CardComponent 
-        img="https://miro.medium.com/v2/resize:fit:700/1*_iMsr00OsNCiMNjHSTtmUQ.jpeg" 
-        title="Revolutionize Your Crypto Experience with PoLink Wallet" 
-        readmorelink="https://medium.com/@polluxchainofficial/exploring-polink-wallet-d96344fd98f2"
-        desc="PoLink is a cryptocurrency wallet ecosystem that helps users manage their digital assets" />
+          img="https://miro.medium.com/v2/resize:fit:700/1*_iMsr00OsNCiMNjHSTtmUQ.jpeg" 
+          title="Revolutionize Your Crypto Experience with PoLink Wallet" 
+          readmorelink="https://medium.com/@polluxchainofficial/exploring-polink-wallet-d96344fd98f2"
+          desc="PoLink is a cryptocurrency wallet ecosystem that helps users manage their digital assets" 
+        />
       </div>
       <div
-        className={`flex justify-between  px-4 mt-8 md:mt-0 ${
-          inViewRight ? "animate-slideInFromRight" : ""
-        }`}
+        className={`w-full md:w-1/2 lg:w-1/4 ${inViewRight ? "animate-slideInFromRight" : ""}`}
         ref={rightRef}
       >
         <CardComponent 
-        img="https://miro.medium.com/v2/resize:fit:720/format:webp/1*Gc_TK0ePMumkZGoL2FW5tg.jpeg" 
-        title="The PoLink Chrome extension is live now." 
-        readmorelink="https://medium.com/@polluxchainofficial/the-polink-chrome-extension-is-live-now-6278bed26a04"
-        desc="PoLink is a native cryptocurrency wallet and Chrome extension ecosystem that offers." />
+          img="https://miro.medium.com/v2/resize:fit:720/format:webp/1*Gc_TK0ePMumkZGoL2FW5tg.jpeg" 
+          title="The PoLink Chrome extension is live now." 
+          readmorelink="https://medium.com/@polluxchainofficial/the-polink-chrome-extension-is-live-now-6278bed26a04"
+          desc="PoLink is a native cryptocurrency wallet and Chrome extension ecosystem that offers." 
+        />
       </div>
       <div
-        className={`flex justify-between  px-4 mt-8 md:mt-0 ${
-          inViewRight ? "animate-slideInFromRight" : ""
-        }`}
+        className={`w-full md:w-1/2 lg:w-1/4 ${inViewRight ? "animate-slideInFromRight" : ""}`}
         ref={rightRef}
       >
         <CardComponent 
-        img="https://miro.medium.com/v2/resize:fit:700/1*IjUVzGzRecjBkHhGIcyQQg.jpeg" 
-        title="Growth of Pox Coin Surges Threefold in Just 39 Days" 
-        readmorelink="https://medium.com/@polluxchainofficial/unveiling-the-phenomenon-growth-of-pox-coin-surges-threefold-in-just-39-days-0ad7c52d1042"
-        desc="The journey of Pox Coin from obscurity to acclaim has been nothing short of remarkable." />
+          img="https://miro.medium.com/v2/resize:fit:700/1*IjUVzGzRecjBkHhGIcyQQg.jpeg" 
+          title="Growth of Pox Coin Surges Threefold in Just 39 Days" 
+          readmorelink="https://medium.com/@polluxchainofficial/unveiling-the-phenomenon-growth-of-pox-coin-surges-threefold-in-just-39-days-0ad7c52d1042"
+          desc="The journey of Pox Coin from obscurity to acclaim has been nothing short of remarkable." 
+        />
       </div>
       <div
-        className={` ${inViewLeft ? "animate-slideInFromLeft" : ""}`}
+        className={`w-full md:w-1/2 lg:w-1/4 ${inViewLeft ? "animate-slideInFromLeft" : ""}`}
         ref={leftRef}
       >
         <CardComponent 
-        img="https://miro.medium.com/v2/resize:fit:700/1*9jozZxvLoDkmxBpHwfViNQ.png" 
-        title="Best Crypto to Buy Now: The Top Coins for 2024"
-        readmorelink="https://medium.com/@polluxchainofficial/best-crypto-to-buy-now-we-analyzed-the-top-coins-for-2024-09c534527ce7"
-        desc="We’ve analyzed the best cryptocurrencies you can buy to share some insight into..." />
+          img="https://miro.medium.com/v2/resize:fit:700/1*9jozZxvLoDkmxBpHwfViNQ.png" 
+          title="Best Crypto to Buy Now: The Top Coins for 2024"
+          readmorelink="https://medium.com/@polluxchainofficial/best-crypto-to-buy-now-we-analyzed-the-top-coins-for-2024-09c534527ce7"
+          desc="We’ve analyzed the best cryptocurrencies you can buy to share some insight into..." 
+        />
       </div>
-      </div>
+    </div>
     </div>
 
   );

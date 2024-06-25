@@ -9,7 +9,7 @@ const Card = ({ chartType, BackgroundColor, BoldNumber, Percentage, ArrowColor, 
       >
         <img src={chartType} alt="" className="w-full h-auto animate-shake" />
       </div>
-      <div className="sm:pt-28 md:pt-24 lg:pt-24 xl:pt-28 2xl:pt-32 flex flex-col justify-between h-full">
+      <div className="pt-28 md:pt-24 lg:pt-24 xl:pt-28 2xl:pt-32 flex flex-col justify-between h-full">
         <div>
           <p className="font-bold text-black text-2xl whitespace-nowrap">{Description==="Transfer Amount of Core Tokens"?"$ ":""}{BoldNumber}</p>
           <p className="py-2 text-gray-700 ">{Description}</p>

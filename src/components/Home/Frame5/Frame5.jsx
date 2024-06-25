@@ -49,7 +49,7 @@ const Frame5 = () => {
           inViewBottom ? "animate-slideInFromBottom" : ""
         }`}
       >
-        <div className="w-[33%]">
+        <div className="sm:w-full md:w-[33%] lg:w-[33%] xl:w-[33%] 2xl:w-[33%]">
         <Frame5Card
           img={IncreasingGraphWithMan}
           desc="HIGH-THROUGHPUT"
@@ -57,11 +57,11 @@ const Frame5 = () => {
           high throughput guarantees swift and efficient transactions with every operation."
         />
         </div>
-        <div className="w-[33%]">
+        <div className="sm:w-full md:w-[33%] lg:w-[33%] xl:w-[33%] 2xl:w-[33%]">
 
         <Frame5Card img={IncreasingGraph} desc="HIGH-SCALABILITY" para="With robust scalability and smart contract capabilities, applications can be 
         deployed on POX in various ways, ensuring POXPROTOCOL can support a large user community." /></div>
-        <div className="w-[33%]">
+        <div className="sm:w-full md:w-[33%] lg:w-[33%] xl:w-[33%] 2xl:w-[33%]">
         <Frame5Card
           img={SettingIcon2}
           desc="HIGH-FLEXIBILITY"
