@@ -49,12 +49,21 @@ module.exports = {
                 transform: "translateX(10px)",
             },
         },
-          
+        rotate: {
+          '0%': {
+              transform: 'rotateX(0deg) rotateZ(0deg) translateZ(0px)',
+          },
+          '100%': {
+              transform: 'rotateX(180deg) rotateZ(-180deg) translateZ(10px)',
+          },
+      },
         },
         animation: {
           tada: 'tada 1s ease-in-out infinite',
           jiggle: 'jiggle 4s ease-in-out infinite',
           shake: 'shake 10s ease-in-out infinite',
+          bounce: 'bounce 3s ease-in-out infinite',
+          rotate: 'rotate 1s linear infinite',
         }
       }
     },
