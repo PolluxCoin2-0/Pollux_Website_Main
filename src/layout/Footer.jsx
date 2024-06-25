@@ -3,6 +3,7 @@ import { FaInstagram, FaFacebook, FaLinkedin, FaRegCopyright,FaDiscord,FaTelegra
 import { FaXTwitter } from 'react-icons/fa6';
 import Logo from '../assets/Logo.png';
 import BG from "../assets/BG.png";
+import PrivacyPDF from "../assets/PrivacyDoc.pdf";
 
 const Footer = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -78,7 +79,7 @@ const Footer = () => {
           </p>
         </div>
         <div className={`flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 ${isVisible ? 'animate-slideInFromRight' : ''}`}>
-          <p className="cursor-pointer">Privacy Policy</p>
+         <a href={PrivacyPDF} target = "_blank" rel="noreferrer"> <p className="cursor-pointer">Privacy Policy</p></a>
           <p className="cursor-pointer">Terms of Use</p>
         </div>
       </div>
