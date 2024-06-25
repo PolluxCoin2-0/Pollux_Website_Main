@@ -39,7 +39,7 @@ const Footer = () => {
           <img src={Logo} alt="logo" className="w-1/2 mx-auto md:mx-0" />
         </div>
         <div className={`w-full md:w-1/3 ${isVisible ? 'animate-slideInFromLeft' : ''} mb-6 md:mb-0 text-center md:text-left`}>
-          <p className="text-2xl pb-8 md:indent-[92px]">Pollux Coin</p>
+          <p className="text-2xl pb-8 md:indent-[80px]">Pollux Coin</p>
           <div className="flex flex-row items-center justify-around">
             <ul className="mb-4 md:mb-0">
             <a href='https://pox-chain.gitbook.io/doc'><li className="py-1 cursor-pointer">Developers</li></a>
@@ -63,10 +63,10 @@ const Footer = () => {
           <p className="pb-8 text-2xl">JOIN US</p>
           <div className="flex space-x-4 justify-center md:justify-end cursor-pointer">
            <a href='https://www.instagram.com/polluxchainofficial/ '> <FaInstagram size={28} /></a>
-            <FaFacebook size={28} />
+           <a href="https://www.facebook.com/PolluxCoin/"><FaFacebook size={28} /></a> 
            <a href='https://x.com/polluxcoin1'><FaXTwitter size={28} /></a>
             <FaLinkedin size={28} />
-            <FaDiscord size={28}/>
+           <a href="https://discord.com/invite/ngy8F2Cs"><FaDiscord size={28}/></a>
            <a href='https://t.me/polluxchainDAO'> <FaTelegram  size={28}/></a>
           </div>
         </div>

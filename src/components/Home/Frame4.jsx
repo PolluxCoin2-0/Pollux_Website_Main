@@ -1,7 +1,52 @@
-import React from 'react';
-import { useInView } from 'react-intersection-observer';
-import Insights from '../../assets/Insights.png';
-import BG4 from '../../assets/BG45.png';
+import React from "react";
+import { useInView } from "react-intersection-observer";
+import Insights from "../../assets/Insights.png";
+import BG4 from "../../assets/BG45.png";
+
+const CardComponent = ({img, title,readmorelink,desc}) => {
+  return (
+    <div className="max-w-sm bg-[#1B043B] border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+      <a href="#">
+        <img
+          className="rounded-t-lg h-48 w-full"
+          src={img}
+          alt={title}
+        />
+      </a>
+      <div className="p-5 ">
+        <a href="#">
+          <h5 className="mb-2 text-2xl font-bold tracking-tight dark:text-white text-white">
+         {title}
+          </h5>
+        </a>
+        <p className="mb-3 font-normal  dark:text-gray-400 text-white">
+          {desc}
+        </p>
+        <a
+          href={readmorelink}
+          className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gradient-to-r from-[#FDE3AD] via-[#FAB735] to-[#FAA811] rounded-lg"
+        >
+          Read more
+          <svg
+            className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 14 10"
+          >
+            <path
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M1 5h12m0 0L9 1m4 4L9 9"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  );
+};
 
 const Frame4 = () => {
   const { ref: leftRef, inView: inViewLeft } = useInView({
@@ -16,35 +61,65 @@ const Frame4 = () => {
 
   return (
     <div
-      className="md:min-h-screen lg:min-h-screen flex flex-col md:flex-row items-center py-12 px-6 md:px-12 lg:px-24"
+      className="md:min-h-screen lg:min-h-screen flex flex-col  justify-center py-12 px-6 md:px-12 lg:px-24"
       style={{
         backgroundImage: `url(${BG4})`,
         backgroundRepeat: "no-repeat",
-        backgroundSize: 'cover',
-        backgroundPositionY: "top"
+        backgroundSize: "cover",
+        backgroundPositionY: "top",
       }}
     >
-      <div
-        className={`flex justify-start w-full md:w-1/2 ${inViewLeft ? 'animate-slideInFromLeft' : ''}`}
-        ref={leftRef}
-      >
-        <img src={Insights} alt="Insights" className="w-full md:w-[90%] object-contain" />
-      </div>
-      <div
-        className={`w-full md:w-1/2 px-4 mt-8 md:mt-0 ${inViewRight ? 'animate-slideInFromRight' : ''}`}
-        ref={rightRef}
-      >
-        <p className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#FDE3AD] via-[#FAB735] to-[#FAA811] text-transparent bg-clip-text">
+      <p className="pb-12 text-center text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#FDE3AD] via-[#FAB735] to-[#FAA811] text-transparent bg-clip-text">
           Insights
         </p>
-        <p className="text-white text-base md:text-lg text-justify py-6">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, vero rem! Suscipit, doloribus pariatur veritatis expedita repudiandae voluptatem perspiciatis provident at voluptatibus inventore. Possimus distinctio sequi, commodi voluptatibus nulla odio!
-        </p>
-        <button className="bg-gradient-to-r from-[#FDE3AD] to-[#FAA811] rounded-full px-6 py-3 font-bold text-gray-900 transition duration-300 ease-in-out transform hover:scale-105">
-          Learn more
-        </button>
+        <div className="flex flex-col md:flex-row justify-between items-center">
+      <div
+        className={` ${inViewLeft ? "animate-slideInFromLeft" : ""}`}
+        ref={leftRef}
+      >
+        <CardComponent 
+        img="https://miro.medium.com/v2/resize:fit:700/1*_iMsr00OsNCiMNjHSTtmUQ.jpeg" 
+        title="Revolutionize Your Crypto Experience with PoLink Wallet" 
+        readmorelink="https://medium.com/@polluxchainofficial/exploring-polink-wallet-d96344fd98f2"
+        desc="PoLink is a cryptocurrency wallet ecosystem that helps users manage their digital assets" />
+      </div>
+      <div
+        className={`flex justify-between  px-4 mt-8 md:mt-0 ${
+          inViewRight ? "animate-slideInFromRight" : ""
+        }`}
+        ref={rightRef}
+      >
+        <CardComponent 
+        img="https://miro.medium.com/v2/resize:fit:720/format:webp/1*Gc_TK0ePMumkZGoL2FW5tg.jpeg" 
+        title="The PoLink Chrome extension is live now." 
+        readmorelink="https://medium.com/@polluxchainofficial/the-polink-chrome-extension-is-live-now-6278bed26a04"
+        desc="PoLink is a native cryptocurrency wallet and Chrome extension ecosystem that offers." />
+      </div>
+      <div
+        className={`flex justify-between  px-4 mt-8 md:mt-0 ${
+          inViewRight ? "animate-slideInFromRight" : ""
+        }`}
+        ref={rightRef}
+      >
+        <CardComponent 
+        img="https://miro.medium.com/v2/resize:fit:700/1*IjUVzGzRecjBkHhGIcyQQg.jpeg" 
+        title="Growth of Pox Coin Surges Threefold in Just 39 Days" 
+        readmorelink="https://medium.com/@polluxchainofficial/unveiling-the-phenomenon-growth-of-pox-coin-surges-threefold-in-just-39-days-0ad7c52d1042"
+        desc="The journey of Pox Coin from obscurity to acclaim has been nothing short of remarkable." />
+      </div>
+      <div
+        className={` ${inViewLeft ? "animate-slideInFromLeft" : ""}`}
+        ref={leftRef}
+      >
+        <CardComponent 
+        img="https://miro.medium.com/v2/resize:fit:700/1*9jozZxvLoDkmxBpHwfViNQ.png" 
+        title="Best Crypto to Buy Now: The Top Coins for 2024"
+        readmorelink="https://medium.com/@polluxchainofficial/best-crypto-to-buy-now-we-analyzed-the-top-coins-for-2024-09c534527ce7"
+        desc="We’ve analyzed the best cryptocurrencies you can buy to share some insight into..." />
+      </div>
       </div>
     </div>
+
   );
 };
 

@@ -49,20 +49,25 @@ const Frame5 = () => {
           inViewBottom ? "animate-slideInFromBottom" : ""
         }`}
       >
+        <div className="w-[33%]">
         <Frame5Card
           img={IncreasingGraphWithMan}
           desc="HIGH-THROUGHPUT"
           para="Discover the capabilities of our upgraded network, offering unmatched transaction speeds ideal for everyday use. The POX blockchain's 
           high throughput guarantees swift and efficient transactions with every operation."
         />
+        </div>
+        <div className="w-[33%]">
+
         <Frame5Card img={IncreasingGraph} desc="HIGH-SCALABILITY" para="With robust scalability and smart contract capabilities, applications can be 
-        deployed on POX in various ways, ensuring POXPROTOCOL can support a large user community." />
+        deployed on POX in various ways, ensuring POXPROTOCOL can support a large user community." /></div>
+        <div className="w-[33%]">
         <Frame5Card
           img={SettingIcon2}
           desc="HIGH-FLEXIBILITY"
           para="POX blockchain caters to various applications from DeFi to gaming, offering a versatile platform ideal for diverse projects. 
           Whether your target audience is a small community or millions of users, POX's flexibility ensures seamless and efficient operation at any scale."
-        />
+        /></div>
       </div>
     </div>
   );

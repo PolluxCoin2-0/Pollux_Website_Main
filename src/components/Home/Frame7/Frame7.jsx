@@ -5,12 +5,15 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { EffectCoverflow, Pagination, Navigation } from "swiper";
+import { EffectCoverflow, Pagination, Navigation, Autoplay } from "swiper";
 import Frame7Card from "./Frame7Card";
 import BG from "../../../assets/BG.png";
-import Slide1 from "../../../assets/slide1.png";
-import Slide2 from "../../../assets/slide2.png";
-import Slide3 from "../../../assets/slide3.png";
+import PoxsrImg from "../../../assets/slide1.png";
+import PoxwalletImg from "../../../assets/slide2.png";
+import PolinkImg from "../../../assets/slide3.png";
+import ScanImg from "../../../assets/ScanImg.png";
+import UsdxImg from "../../../assets/UsdxImg.png";
+import UviswapImg from "../../../assets/UviswapImg.png";
 
 const Frame7 = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -39,37 +42,37 @@ const Frame7 = () => {
 
   const cardsData = [
     {
-      img: Slide1,
+      img: PoxsrImg,
       desc: "POX SRs are elected through decentralized voting and are responsible for the on-chain governance of the POX community. By participating in SR voting, members can earn rewards and contribute to the growth of the POX ecosystem.",
       title: "POX SR",
       link:" https://www.poxscan.io/governance/super-representatives"
     },
     {
-      img: Slide2,
+      img: PoxwalletImg,
       desc: "A groundbreaking solution created by the exceptional developers of the POX community, this state-of-the-art wallet has gained attention for its innovative features. It has also formed strong partnerships with several world-class wallets, ensuring a seamless and secure digital asset experience.",
       title: "POX Wallet",
       link:"https://poxscan.io/download-polink"
     },
     {
-      img: Slide3,
+      img: PolinkImg,
       desc: "This is an official Oracle project operating on the Pollux network, securely providing real-world data to on-chain smart contracts.",
       title: "Polink",
       link:"https://chromewebstore.google.com/detail/polink/afeibjjgfjfphjedhdjgbgbhpomolbjm"
     },
     {
-      img: Slide1,
+      img: ScanImg,
       desc: "The pioneering blockchain explorer for POX, providing comprehensive on-chain data queries and effortless token creation support.",
       title: "POX Scan",
       link:"https://www.poxscan.io/"
     },
     {
-      img: Slide2,
+      img: UviswapImg,
       desc: "Unlock the Future of Development with POX DApps: Minimal Gas Fees and Lightning-Fast Transactions!",
       title: "UVISWAP",
       link:"https://uviswap.org/"
     },
     {
-      img: Slide3,
+      img: UsdxImg,
       desc: "A stablecoin backed by Pollux coin reserves, offering quick issuance and low transaction fees. From day one, it has captivated users with its unparalleled popularity and reliability.",
       title: "PRC-20 USDX",
       link:"https://poxusdx.com/ "
@@ -114,13 +117,17 @@ const Frame7 = () => {
             prevEl: ".swiper-button-prev",
             clickable: true,
           }}
+          autoplay={{
+            delay: 800,
+            disableOnInteraction: false,
+          }}
           onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
-          modules={[EffectCoverflow, Pagination, Navigation]}
+          modules={[EffectCoverflow, Pagination, Navigation,Autoplay]}
           className="swiper-container"
         >
           {cardsData.map((card, index) => (
             <SwiperSlide key={index} className="carousel-slide">
-              <Frame7Card img={card.img} desc={card.desc} title={card.title} isActive={index === activeIndex} />
+              <Frame7Card img={card.img} desc={card.desc} title={card.title} isActive={index === activeIndex} link={card?.link} />
             </SwiperSlide>
           ))}
         </Swiper>

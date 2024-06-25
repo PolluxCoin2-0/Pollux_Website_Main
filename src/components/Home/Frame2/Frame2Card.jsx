@@ -7,16 +7,16 @@ const Card = ({ chartType, BackgroundColor, BoldNumber, Percentage, ArrowColor, 
         className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[90%] p-4 rounded-3xl shadow-lg "
         style={{ backgroundColor: `${BackgroundColor}`, marginTop: "2rem" }}
       >
-        <img src={chartType} alt="" className="w-full h-auto" />
+        <img src={chartType} alt="" className="w-full h-auto animate-shake" />
       </div>
       <div className="sm:pt-28 md:pt-24 lg:pt-24 xl:pt-28 2xl:pt-32 flex flex-col justify-between h-full">
         <div>
           <p className="font-bold text-black text-2xl whitespace-nowrap">{Description==="Transfer Amount of Core Tokens"?"$ ":""}{BoldNumber}</p>
           <p className="py-2 text-gray-700 ">{Description}</p>
-          <div className="flex items-center text-green-500">
+          {/* <div className="flex items-center text-green-500">
             <FaArrowUpLong color={ArrowColor} />
             <p className="ml-2">{Percentage}% increase <span className="text-gray-500">in today</span></p>
-          </div>
+          </div> */}
         </div>
         {/* <div className="border-t mt-4 pt-2 text-gray-600 text-sm">
           <div className="flex items-center">

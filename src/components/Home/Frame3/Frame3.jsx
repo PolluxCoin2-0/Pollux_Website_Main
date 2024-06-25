@@ -45,7 +45,7 @@ const Frame3 = () => {
         POX Market Performance
       </p>
       <p className="text-white text-center pb-12 text-2xl font-semibold">
-      POX, one of the most promising cryptocurrencies, is listed on Coinstore, Koinbx, and LBank exchanges, connecting millions of value investors worldwide.
+      POX, one of the most promising cryptocurrencies, is listed on multiple exchanges, connecting millions of value investors worldwide.
       </p>
 
      
