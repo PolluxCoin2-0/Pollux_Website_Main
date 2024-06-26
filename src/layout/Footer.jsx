@@ -51,7 +51,7 @@ const Footer = () => {
               {/* <li className="py-1 cursor-pointer">Grants</li> */}
             </ul>
             <ul>
-             <a href=' https://www.polluxcoin.info/whitepaper.pdf'> <li className="py-1 cursor-pointer">White Paper</li></a>
+             <a href=' https://poxscan.io/whitepaper.pdf'> <li className="py-1 cursor-pointer">White Paper</li></a>
               <li className="py-1 cursor-pointer">Educational</li>
              <a href='https://medium.com/@polluxchainofficial'> <li className="py-1 cursor-pointer">News Feed</li></a>
               <li className="py-1 cursor-pointer">About</li>
