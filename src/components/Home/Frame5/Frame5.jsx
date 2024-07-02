@@ -1,9 +1,9 @@
 import { useInView } from "react-intersection-observer";
 import Frame5Card from "./Frame5Card";
-import IncreasingGraphWithMan from "../../../assets/IncreasingGraphWithMan.png";
-import IncreasingGraph from "../../../assets/IncreasingGraph.png";
-import SettingIcon2 from "../../../assets/SettingIcon2.png";
-import BG5 from "../../../assets/BG45.png";
+import IncreasingGraphWithMan from "../../../assets/IncreasingGraphWithMan.webp";
+import IncreasingGraph from "../../../assets/IncreasingGraph.webp";
+import SettingIcon2 from "../../../assets/SettingIcon2.webp";
+import BG5 from "../../../assets/BG45.webp";
 
 const Frame5 = () => {
   const { ref: topRef, inView: inViewTop } = useInView({

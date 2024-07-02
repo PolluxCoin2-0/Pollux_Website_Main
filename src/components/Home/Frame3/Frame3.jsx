@@ -1,5 +1,5 @@
 import { useInView } from 'react-intersection-observer';
-import BG from "../../../assets/BG.png";
+import BG from "../../../assets/BG.webp";
 import Frame3Chart from './Frame3Chart';
 import { useEffect, useState } from 'react';
 import { getBlockHeight, getPriceChart } from '../../../utils/axios';

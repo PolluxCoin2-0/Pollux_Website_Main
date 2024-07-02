@@ -1,7 +1,5 @@
-import React from "react";
 import { useInView } from "react-intersection-observer";
-import Insights from "../../assets/Insights.png";
-import BG4 from "../../assets/BG45.png";
+import BG4 from "../../assets/BG45.webp";
 
 const CardComponent = ({img, title,readmorelink,desc}) => {
   return (

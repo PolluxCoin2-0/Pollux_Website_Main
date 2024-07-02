@@ -1,4 +1,4 @@
-import LogoImage from "../assets/Logo.png";
+import LogoImage from "../assets/Logo.webp";
 import { useInView } from "react-intersection-observer";
 import { MdMenu } from "react-icons/md";
 import { useState } from "react";

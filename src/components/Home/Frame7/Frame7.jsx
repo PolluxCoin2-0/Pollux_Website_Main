@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.min.css";
 import "swiper/css";
@@ -7,13 +7,13 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { EffectCoverflow, Pagination, Navigation, Autoplay } from "swiper";
 import Frame7Card from "./Frame7Card";
-import BG from "../../../assets/BG.png";
-import PoxsrImg from "../../../assets/slide1.png";
-import PoxwalletImg from "../../../assets/slide2.png";
-import PolinkImg from "../../../assets/slide3.png";
-import ScanImg from "../../../assets/ScanImg.png";
-import UsdxImg from "../../../assets/UsdxImg.png";
-import UviswapImg from "../../../assets/UviswapImg.png";
+import BG from "../../../assets/BG.webp";
+import PoxsrImg from "../../../assets/slide1.webp";
+import PoxwalletImg from "../../../assets/slide2.webp";
+import PolinkImg from "../../../assets/slide3.webp";
+import ScanImg from "../../../assets/ScanImg.webp";
+import UsdxImg from "../../../assets/UsdxImg.webp";
+import UviswapImg from "../../../assets/UviswapImg.webp";
 
 const Frame7 = () => {
   const [isVisible, setIsVisible] = useState(false);

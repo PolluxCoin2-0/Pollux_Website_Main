@@ -1,8 +1,7 @@
-import React from 'react';
 import { useInView } from 'react-intersection-observer';
-import OffChain from "../../assets/offchain.png";
-import Net from "../../assets/net.png";
-import BG from "../../assets/BG.png";
+import OffChain from "../../assets/offchain.webp";
+import Net from "../../assets/net.webp";
+import BG from "../../assets/BG.webp";
 
 const Frame6 = () => {
   const { ref: leftRef, inView: inViewLeft } = useInView({

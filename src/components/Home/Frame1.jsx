@@ -1,5 +1,5 @@
 import { useInView } from 'react-intersection-observer';
-import FrameRight from "../../assets/Frame1Right.png";
+import FrameRight from "../../assets/Frame1Right.webp";
 import Navbar from '../../layout/Navbar';
 
 const Frame1 = () => {

@@ -138,14 +138,14 @@ body {
 }
 
 .fram1-bg {
-  background-image: url("./assets/Glow.png");
+  background-image: url("./assets/Glow.webp");
   background-size: cover; 
   background-position-y: bottom;
   background-repeat: no-repeat;
 }
 
 .navbar-react{
-  background-image: url("./assets/Rectangle.png");
+  background-image: url("./assets/Rectangle.webp");
   background-size: cover; 
   background-position: -0.5px 20px;
   background-repeat: no-repeat;

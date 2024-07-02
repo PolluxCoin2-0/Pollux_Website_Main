@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import Card from "./Frame2Card";
-import ArrowWhiteChart from "../../../assets/ArrowWhiteChart.png";
-import ArrowBlackChart from "../../../assets/ArrowBlackChart.png";
-import BarChart from "../../../assets/BarChart.png";
-import BG from "../../../assets/BG.png";
+import ArrowWhiteChart from "../../../assets/ArrowWhiteChart.webp";
+import ArrowBlackChart from "../../../assets/ArrowBlackChart.webp";
+import BarChart from "../../../assets/BarChart.webp";
+import BG from "../../../assets/BG.webp";
 import { getBlockHeight, getFrame2Data } from '../../../utils/axios';
 import { formatNumberWithCommas } from '../../../utils/FormattingNumber';
 

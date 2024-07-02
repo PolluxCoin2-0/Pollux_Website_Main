@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { FaInstagram, FaFacebook, FaLinkedin, FaRegCopyright,FaDiscord,FaTelegram  } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
-import Logo from '../assets/Logo.png';
-import BG from "../assets/BG.png";
+import Logo from '../assets/Logo.webp';
+import BG from "../assets/BG.webp";
 import PrivacyPDF from "../assets/PrivacyDoc.pdf";
 
 const Footer = () => {
