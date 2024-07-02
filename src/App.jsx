@@ -1,19 +1,22 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
+import { lazy, Suspense } from "react";
 import Footer from "./layout/Footer";
 
-function App() {
+const Home = lazy(() => import("./pages/Home"));
 
+function App() {
   return (
     <div className="bg-[#10022B]">
-     <Router>
-      <Routes>
-      <Route path="/" element={<Home />} />
-      </Routes>
-      <Footer/>
-     </Router>
+      <Router>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </Suspense>
+        <Footer />
+      </Router>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
