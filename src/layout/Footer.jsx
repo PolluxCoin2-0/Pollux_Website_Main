@@ -37,7 +37,7 @@ const Footer = () => {
     >
       <div className="border-t-[2px] pt-6 flex flex-col md:flex-row items-center justify-between">
         <div className={`w-full md:w-1/3 ${isVisible ? 'animate-slideInFromLeft' : ''} mb-6 md:mb-0`}>
-          <img src={Logo} alt="logo" className="w-1/2 mx-auto md:mx-0" />
+          <img src={Logo} alt="pox-logo" className="w-1/2 mx-auto md:mx-0" />
         </div>
         <div className={`w-full md:w-1/3 ${isVisible ? 'animate-slideInFromLeft' : ''} mb-6 md:mb-0 text-center md:text-left`}>
           <p className="text-2xl pb-8 md:indent-[80px]">Pollux Coin</p>

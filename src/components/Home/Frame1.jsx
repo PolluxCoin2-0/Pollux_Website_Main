@@ -21,7 +21,7 @@ const Frame1 = () => {
           className={`w-full md:w-1/2 ${leftInView ? 'animate-slideInFromLeft' : ''}`} 
           ref={leftRef}
         >
-          <p className="text-4xl md:text-6xl lg:text-[5.5rem] text-white font-bold tracking-wide">DECENTRALIZE</p>
+          <h1 className="text-4xl md:text-6xl lg:text-[5.5rem] text-white font-bold tracking-wide">DECENTRALIZE</h1>
           <p className="text-4xl md:text-6xl lg:text-[5.5rem] font-bold bg-gradient-to-r from-[#FDE3AD] via-[#FAB735] to-[#FAA811] inline-block text-transparent bg-clip-text">THE WEB</p>
           <p className="text-white text-justify py-6 md:py-12 text-base md:text-xl">
           Pollux is an open-source blockchain platform optimized for smart contracts, ensuring seamless compatibility with Ethereum. It boasts superior transaction speeds compared to Ethereum, thanks to its unique consensus mechanism. Developers benefit from a fast and efficient experience on Pollux, enabling smooth blockchain operations.
@@ -32,7 +32,7 @@ const Frame1 = () => {
           className={`flex justify-center md:justify-end w-full md:w-1/2 ${rightInView ? 'animate-slideInFromRight' : ''}`} 
           ref={rightRef}
         >
-          <img src={FrameRight} alt="" className="w-full h-auto max-h-[400px] md:max-h-[65%]" />
+          <img src={FrameRight} alt="pox-logo" className="w-full h-auto max-h-[400px] md:max-h-[65%]" />
         </div>
       </div>
     </div>

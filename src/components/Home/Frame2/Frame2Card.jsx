@@ -7,7 +7,7 @@ const Card = ({ chartType, BackgroundColor, BoldNumber, Percentage, ArrowColor, 
         className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[90%] p-4 rounded-3xl shadow-lg "
         style={{ backgroundColor: `${BackgroundColor}`, marginTop: "2rem" }}
       >
-        <img src={chartType} alt="" className="w-full h-auto animate-shake" />
+        <img src={chartType} alt="react-chart" className="w-full h-auto animate-shake" />
       </div>
       <div className="pt-28 md:pt-24 lg:pt-24 xl:pt-28 2xl:pt-32 flex flex-col justify-between h-full">
         <div>
