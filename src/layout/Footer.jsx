@@ -75,7 +75,7 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row justify-between mt-8 text-center md:text-left">
         <div className={`${isVisible ? 'animate-slideInFromLeft' : ''} mb-4 md:mb-0`}>
           <p className="flex items-center justify-center md:justify-start">
-            Copyright <span className="mx-1"><FaRegCopyright /></span> 2024 Conflux. All Rights Reserved
+            Copyright <span className="mx-1"><FaRegCopyright /></span> 2024 PolluxCoin. All Rights Reserved
           </p>
         </div>
         <div className={`flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 ${isVisible ? 'animate-slideInFromRight' : ''}`}>
