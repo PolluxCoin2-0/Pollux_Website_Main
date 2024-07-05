@@ -70,7 +70,7 @@ const Frame3 = () => {
       </div>
       <div className='w-full flex flex-col md:flex-row lg:flex-row justify-between text-white py-12 space-y-4 md:space-y-0 md:space-x-4'>
   <div className='flex-1 flex flex-col border-y-[1px] border-gray-700 border-l-[1px] rounded-3xl md:rounded-r-none lg:rounded-r-none px-4 py-5 md:px-16 bg-[#271B3F]'>
-    <p className='font-bold text-3xl'>6736</p>
+    <p className='font-bold text-3xl'>{blockHeightData?.poxPrice && (blockHeightData?.poxPrice)}</p>
     <p className='font-semibold text-xl'>Current Price</p>
   </div>
   <div className='flex-1 flex flex-col border-y-[1px] border-gray-700 px-4 py-5 rounded-3xl md:rounded-none lg:rounded-none md:px-16 bg-[#271B3F]'>
