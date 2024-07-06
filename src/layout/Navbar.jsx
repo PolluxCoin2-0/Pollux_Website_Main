@@ -117,6 +117,16 @@ const Navbar = () => {
             <p className="text-white font-semibold text-lg cursor-pointer">
              Login
             </p>
+            {isLoginOpen && (
+              <div className="absolute top-38 right-6 bg-[#361466] rounded-lg shadow-lg px-10 py-2 text-white">
+                <p className="py-1 cursor-pointer">
+                  <a href="https://www.polluxchain.com/chain/members/signin">SR/SRR</a>
+                </p>
+                <p className="py-1">
+                  <a href="">Mining</a>
+                </p>
+              </div>
+            )}
           </div>
         )}
       </div>
