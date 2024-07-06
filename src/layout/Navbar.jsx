@@ -114,7 +114,7 @@ const Navbar = () => {
             <p className="text-white font-semibold text-lg cursor-pointer mb-2">
              Coin
             </p>
-            <p className="text-white font-semibold text-lg cursor-pointer">
+            <p className="text-white font-semibold text-lg cursor-pointer" onClick={toggleLogin}>
              Login
             </p>
             {isLoginOpen && (
