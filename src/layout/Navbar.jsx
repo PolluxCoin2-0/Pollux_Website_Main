@@ -2,6 +2,7 @@ import LogoImage from "../assets/Logo.webp";
 import { useInView } from "react-intersection-observer";
 import { MdMenu } from "react-icons/md";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const { ref: topRef, inView: inViewTop } = useInView({
@@ -10,10 +11,16 @@ const Navbar = () => {
   });
   const [isMobile, setIsMobile] = useState(false);
   const [isEcosystemOpen, setIsEcosystemOpen] = useState(false);
+  const [isLoginOpen, setIsLoginOpen] = useState(false);
 
   const toggleEcosystem = () => {
     setIsEcosystemOpen(!isEcosystemOpen);
   };
+
+  const toggleLogin = () => {
+    setIsLoginOpen(!isLoginOpen);
+  };
+
   return (
     <>
       <nav
@@ -55,9 +62,22 @@ const Navbar = () => {
           <p className="text-white font-semibold text-2xl cursor-pointer ">
             Coin
           </p></a>
-          <p className="text-white font-semibold text-2xl cursor-pointer ">
+        <div className="relative">
+          <p className="text-white font-semibold text-2xl cursor-pointer" onClick={toggleLogin}>
             Login
           </p>
+
+          {isLoginOpen && (
+              <div className="absolute top-8 bg-[#361466] rounded-lg shadow-lg px-10 py-2 text-white">
+                <p className="py-1 cursor-pointer">
+                  <a href="https://www.polluxchain.com/chain/members/signin">SR/SRR</a>
+                </p>
+                <p className="py-1">
+                  <a href="">Mining</a>
+                </p>
+              </div>
+            )}
+            </div>
         </div>
       </nav>
 

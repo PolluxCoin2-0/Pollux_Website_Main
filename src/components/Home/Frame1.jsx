@@ -29,7 +29,7 @@ const Frame1 = () => {
           <a href='https://poxscan.io/'><button className="bg-gradient-to-r from-[#FDE3AD] via-[#FAB735] to-[#FAA811] rounded-3xl px-4 py-3 font-bold">Learn more</button> </a>
         </div>
         <div 
-          className={`flex justify-center md:justify-end w-full md:w-1/2 ${rightInView ? 'animate-slideInFromRight' : ''}`} 
+          className={`flex justify-center md:justify-end w-full mt-6 md:w-1/2 ${rightInView ? 'animate-slideInFromRight' : ''}`} 
           ref={rightRef}
         >
           <img src={FrameRight} alt="pox-logo" className="w-full h-auto max-h-[400px] md:max-h-[65%]" />
