@@ -23,7 +23,7 @@ const Frame6 = () => {
         ref={leftRef}
         className={`w-full text-center md:text-left lg:text-left md:w-1/2 px-4 md:px-8 lg:px-12 ${inViewLeft ? 'animate-slideInFromLeft' : ''}`}
       >
-        <p className="text-4xl md:text-6xl lg:text-8xl font-bold bg-gradient-to-r from-[#FDE3AD] via-[#FAB735] to-[#FAA811] inline-block text-transparent bg-clip-text">
+        <p className="text-4xl md:text-8xl lg:text-8xl font-bold bg-gradient-to-r from-[#FDE3AD] via-[#FAB735] to-[#FAA811] inline-block text-transparent bg-clip-text">
           UVI NETWORK
         </p>
         <p className="text-white text-base md:text-lg text-justify py-4 md:py-6 lg:py-10">

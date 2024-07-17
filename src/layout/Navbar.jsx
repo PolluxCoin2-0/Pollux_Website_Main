@@ -38,7 +38,7 @@ const Navbar = () => {
               Ecosystem
             </p>
             {isEcosystemOpen && (
-              <div className="absolute left-0 mt-2 z-20">
+              <div className="absolute left-0 mt-2 z-40">
                 <ul className="bg-[#230C44] rounded-md shadow-lg px-10 py-2 transition transform duration-300 ease-out opacity-100 translate-y-0 text-white">
                  <a href=" https://www.poxscan.io/governance/super-representatives"> <li className="py-1">POX SR</li></a>
                   <a href="https://poxscan.io/download-polink"><li className="py-1">Wallet</li></a>
@@ -99,7 +99,7 @@ const Navbar = () => {
               Ecosystem
             </p>
             {isEcosystemOpen && (
-              <div className="absolute left-0 mt-2 z-20">
+              <div className="absolute left-0 mt-2 z-40">
                 <ul className="bg-[#230C44] rounded-md shadow-lg px-10 py-2 transition transform duration-300 ease-out opacity-100 translate-y-0 text-white">
                 <a href=" https://www.poxscan.io/governance/super-representatives"> <li className="py-1">POX SR</li></a>
                   <a href="https://poxscan.io/download-polink"><li className="py-1">Wallet</li></a>

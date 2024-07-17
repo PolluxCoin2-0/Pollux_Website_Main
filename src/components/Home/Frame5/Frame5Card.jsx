@@ -21,7 +21,8 @@ const Frame5Card = ({ img, desc, para }) => {
           {para.length > characterLimit && (
             <div>
               <button onClick={toggleReadMore}
-                className="inline-flex items-center px-3 py-2 mt-4 text-sm font-medium text-center text-white bg-gradient-to-r from-[#FDE3AD] via-[#FAB735] to-[#FAA811] rounded-lg"
+                className="inline-flex items-center px-3 py-2 mt-4 text-sm font-bold text-center text-black 
+                bg-gradient-to-r from-[#FDE3AD] via-[#FAB735] to-[#FAA811] rounded-lg"
               >
                 {isExpanded ? 'Read Less' : 'Read More'}
               </button>

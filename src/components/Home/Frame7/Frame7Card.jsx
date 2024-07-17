@@ -4,9 +4,9 @@ import { BiSolidRightArrow } from "react-icons/bi";
 const Frame7Card = ({ img, desc, title, isActive, link }) => {
   return (
     <div className="frame7-card text-white bg-[#271B3F] border-[1px] shadow-lg flex flex-col justify-center items-center py-12 md:py-28 lg:py-12 px-4 md:px-12 lg:px-12">
-      {img && <img src={img} alt={title} className="w-[45%] mb-16" />}
+      {img && <img src={img} alt={title} className="w-[45%] h-1/2 mb-16" />}
       <h3 className="text-2xl font-bold mb-12 bg-[#FAA811] pt-[8px] pb-[2px] px-2 rounded-lg">{title}</h3>
-      <p className="text-justify mb-12">{desc}</p>
+      <p className="text-justify mb-12 h-12 w-full">{`${desc.slice(0, 50)}...`}</p>
       {isActive && (
         <a href={link}>
         <button className="w-56 font-bold  rounded-3xl flex justify-center items-center">
