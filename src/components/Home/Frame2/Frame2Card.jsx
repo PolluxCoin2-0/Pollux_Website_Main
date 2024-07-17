@@ -11,8 +11,8 @@ const Card = ({ chartType, BackgroundColor, BoldNumber, Percentage, ArrowColor, 
       </div>
       <div className="pt-28 md:pt-24 lg:pt-24 xl:pt-28 2xl:pt-32 flex flex-col justify-between h-full">
         <div>
-          <p className="font-bold text-black text-2xl whitespace-nowrap">{Description==="Transfer Amount of Core Tokens"?"$ ":""}{BoldNumber}</p>
-          <p className="py-2 text-gray-700 ">{Description}</p>
+          <h1 className="font-bold text-black text-2xl whitespace-nowrap">{Description==="Transfer Amount of Core Tokens"?"$ ":""}{BoldNumber}</p>
+          <h1 className="py-2 text-gray-700 ">{Description}</h1>
           {/* <div className="flex items-center text-green-500">
             <FaArrowUpLong color={ArrowColor} />
             <p className="ml-2">{Percentage}% increase <span className="text-gray-500">in today</span></p>
