@@ -43,13 +43,13 @@ const Frame7 = () => {
   const cardsData = [
     {
       img: PoxsrImg,
-      desc: "POX SRs are elected through decentralized voting and are responsible for the on-chain governance of the POX community. By participating in SR voting, members can earn rewards and contribute to the growth of the POX ecosystem.",
+      desc: "POX Super Representatives are elected via decentralized voting to govern the POX community on-chain. By voting for SRs, participants not only shape the ecosystem but also earn rewards for their active contribution to POX's growth.",
       title: "POX SR",
       link:" https://www.poxscan.io/governance/super-representatives"
     },
     {
       img: PoxwalletImg,
-      desc: "A groundbreaking solution created by the exceptional developers of the POX community, this state-of-the-art wallet has gained attention for its innovative features. It has also formed strong partnerships with several world-class wallets, ensuring a seamless and secure digital asset experience.",
+      desc: "A revolutionary solution crafted by the exceptional community developers of POX. This state-of-the-art wallet has not only garnered attention for its innovative features but has also forged robust partnerships with several world-class wallets, ensuring a seamless and secure digital asset experience.",
       title: "POX Wallet",
       link:"https://poxscan.io/download-polink"
     },

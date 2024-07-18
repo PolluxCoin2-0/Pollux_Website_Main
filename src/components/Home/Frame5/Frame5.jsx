@@ -40,8 +40,7 @@ const Frame5 = () => {
           inViewTop ? "animate-slideInFromTop" : ""
         }`}
       >
-        POXPROTOCOL stands as the foremost decentralized blockchain protocol
-        globally.
+        POXPROTOCOL is the world's leading decentralized blockchain protocol.
       </p>
       <div
         ref={bottomRef}
@@ -50,24 +49,28 @@ const Frame5 = () => {
         }`}
       >
         <div className="sm:w-full md:w-[33%] lg:w-[33%] xl:w-[33%] 2xl:w-[33%]">
-        <Frame5Card
-          img={IncreasingGraphWithMan}
-          desc="HIGH-THROUGHPUT"
-          para="Discover the capabilities of our upgraded network, offering unmatched transaction speeds ideal for everyday use. The POX blockchain's 
-          high throughput guarantees swift and efficient transactions with every operation."
-        />
+          <Frame5Card
+            img={IncreasingGraphWithMan}
+            desc="HIGH-THROUGHPUT"
+            para=" Experience the power of our enhanced network with unparalleled transaction speeds, perfect for daily use. POX blockchain's high-throughput ensures every transaction is swift and efficient.."
+          />
         </div>
         <div className="sm:w-full md:w-[33%] lg:w-[33%] xl:w-[33%] 2xl:w-[33%]">
+          <Frame5Card
+            img={IncreasingGraph}
+            desc="HIGH-SCALABILITY"
+            para="Experience lightning-fast transactions without breaking the bank! POX blockchain offers incredibly low gas fees, making every transaction seamless and affordable. Perfect for developers and businesses aiming to maximize efficiency and minimize costs."
+          />
+        </div>
 
-        <Frame5Card img={IncreasingGraph} desc="HIGH-SCALABILITY" para="With robust scalability and smart contract capabilities, applications can be 
-        deployed on POX in various ways, ensuring POXPROTOCOL can support a large user community." /></div>
         <div className="sm:w-full md:w-[33%] lg:w-[33%] xl:w-[33%] 2xl:w-[33%]">
-        <Frame5Card
-          img={SettingIcon2}
-          desc="HIGH-FLEXIBILITY"
-          para="POX blockchain caters to various applications from DeFi to gaming, offering a versatile platform ideal for diverse projects. 
-          Whether your target audience is a small community or millions of users, POX's flexibility ensures seamless and efficient operation at any scale."
-        /></div>
+          <Frame5Card
+            img={SettingIcon2}
+            desc="HIGH-FLEXIBILITY"
+            para="From DeFi to gaming, POX blockchain supports a wide range of applications, making it the perfect platform for diverse projects.
+Whether you're serving a small community or millions of users, POX's high-flexibility ensures your application runs smoothly and efficiently, no matter the scale."
+          />
+        </div>
       </div>
     </div>
   );

@@ -53,7 +53,7 @@ const Footer = () => {
             <ul>
              <a href=' https://poxscan.io/whitepaper.pdf'> <li className="py-1 cursor-pointer">White Paper</li></a>
               <li className="py-1 cursor-pointer">Educational</li>
-             <a href='https://medium.com/@polluxchainofficial'> <li className="py-1 cursor-pointer">News Feed</li></a>
+             <a href='https://medium.com/@polluxchainofficial'> <li className="py-1 cursor-pointer">Blogs</li></a>
               <li className="py-1 cursor-pointer">About</li>
               {/* <li className="py-1 cursor-pointer">Initiatives</li> */}
               {/* <li className="py-1 cursor-pointer">Team</li> */}

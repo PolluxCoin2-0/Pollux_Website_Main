@@ -45,10 +45,8 @@ const Frame3 = () => {
         POX Market Performance
       </p>
       <p className="text-white text-center pb-12 text-2xl font-semibold">
-      POX, one of the most promising cryptocurrencies, is listed on multiple exchanges, connecting millions of value investors worldwide.
+      Our Token (POX) is listed on Coinstore, kkoinbx, Lbank exchanges, POX, on of the most promising cryptos, connects millions of value investors across the globe.
       </p>
-
-     
 
       <div className='whitespace-nowrap flex flex-col md:flex-row lg:flex-row md:space-x-6 lg:space-x-6'>
       <Frame3Chart data={chartData}/>

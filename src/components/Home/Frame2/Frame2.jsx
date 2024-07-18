@@ -57,7 +57,7 @@ const Frame2 = () => {
         <div className="-mt-[9%] md:col-span-2 flex flex-col justify-between space-y-12">
           <div className="bg-gradient-to-r from-[#FDE3AD] via-[#FAB735] to-[#FAA811] rounded-3xl p-8 text-white font-bold text-center shadow-md h-full flex items-center">
             <p className="text-black text-center text-base md:text-xl lg:text-xl">
-            With over 29.4k accounts and more than 300,000 transactions, POX is the fastest-growing chain.
+            Boosting over  29.4k accounts and  more than 3 lakh transections, pox is fastest growing chain. 
             </p>
           </div>
           <div className="pt-12 flex flex-col md:flex-row justify-between space-y-20 md:space-y-0 md:space-x-8">
