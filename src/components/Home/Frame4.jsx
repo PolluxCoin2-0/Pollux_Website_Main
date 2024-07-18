@@ -13,11 +13,11 @@ const CardComponent = ({img, title,readmorelink,desc}) => {
       </a>
       <div className="p-5 ">
         <a href="#">
-          <h5 className="mb-2 text-2xl font-bold tracking-tight dark:text-white text-white">
+          <h5 className="mb-2 text-2xl font-bold tracking-tight dark:text-white text-white h-16 truncate-multiline-title">
          {title}
           </h5>
         </a>
-        <p className="mb-3 font-normal  dark:text-gray-400 text-white">
+        <p className="mb-3 font-normal  dark:text-gray-400 text-justify text-white truncate-multiline-desc">
           {desc}
         </p>
         <a
@@ -79,7 +79,7 @@ const Frame4 = () => {
           img="https://miro.medium.com/v2/resize:fit:700/1*_iMsr00OsNCiMNjHSTtmUQ.jpeg" 
           title="Revolutionize Your Crypto Experience with PoLink Wallet" 
           readmorelink="https://medium.com/@polluxchainofficial/exploring-polink-wallet-d96344fd98f2"
-          desc="PoLink is a cryptocurrency wallet ecosystem that helps users manage their digital assets" 
+          desc="PoLink is a cyrptocurrency wallet ecosystem that helps users manage their digital assets"
         />
       </div>
       <div
@@ -90,7 +90,7 @@ const Frame4 = () => {
           img="https://miro.medium.com/v2/resize:fit:720/format:webp/1*Gc_TK0ePMumkZGoL2FW5tg.jpeg" 
           title="The PoLink Chrome extension is live now." 
           readmorelink="https://medium.com/@polluxchainofficial/the-polink-chrome-extension-is-live-now-6278bed26a04"
-          desc="PoLink is a native cryptocurrency wallet and Chrome extension ecosystem that offers." 
+          desc="PoLink is a native cryptocurrency wallet and Chrome extension ecosystem that offers"
         />
       </div>
       <div
@@ -101,7 +101,7 @@ const Frame4 = () => {
           img="https://miro.medium.com/v2/resize:fit:700/1*IjUVzGzRecjBkHhGIcyQQg.jpeg" 
           title="Growth of Pox Coin Surges Threefold in Just 39 Days" 
           readmorelink="https://medium.com/@polluxchainofficial/unveiling-the-phenomenon-growth-of-pox-coin-surges-threefold-in-just-39-days-0ad7c52d1042"
-          desc="The journey of Pox Coin from obscurity to acclaim has been nothing short of remarkable." 
+          desc="The journey of Pox Coin from obscurity to acclaim has been nothingn short of remarkable." 
         />
       </div>
       <div
@@ -112,7 +112,7 @@ const Frame4 = () => {
           img="https://miro.medium.com/v2/resize:fit:700/1*9jozZxvLoDkmxBpHwfViNQ.png" 
           title="Best Crypto to Buy Now: The Top Coins for 2024"
           readmorelink="https://medium.com/@polluxchainofficial/best-crypto-to-buy-now-we-analyzed-the-top-coins-for-2024-09c534527ce7"
-          desc="We’ve analyzed the best cryptocurrencies you can buy to share some insight into..." 
+          desc="We've analyzed the best cyptocurrencies you can buy to share some insight into..." 
         />
       </div>
     </div>
