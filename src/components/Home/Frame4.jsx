@@ -17,7 +17,7 @@ const CardComponent = ({img, title,readmorelink,desc}) => {
          {title}
           </h5>
         </a>
-        <p className="mb-3 font-normal  dark:text-gray-400 text-justify text-white truncate-multiline-desc">
+        <p className="mb-3 font-normal  dark:text-gray-400 text-justify h-24 text-white truncate-multiline-desc">
           {desc}
         </p>
         <a
