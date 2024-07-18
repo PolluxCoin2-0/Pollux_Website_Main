@@ -15,7 +15,7 @@ function App() {
   const handleHomeLoad = () => {
     setTimeout(() => {
       setFooterVisible(true);
-    }, 2000); // Set footer visibility after 2 seconds
+    }, 1000); // Set footer visibility after 2 seconds
   };
 
   return (
