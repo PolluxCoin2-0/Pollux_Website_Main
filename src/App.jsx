@@ -1,21 +1,14 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import Footer from "./layout/Footer";
-import { ShimmerText } from "react-shimmer-effects";
 
 const Home = lazy(() => import("./pages/Home"));
-
-const LoadingScreen = () => {
-  return (
-<ShimmerText line={5} gap={10} />
-  );
-};
 
 function App() {
   return (
     <div className="bg-[#10022B]">
       <Router>
-        <Suspense fallback={<LoadingScreen />}>
+        <Suspense fallback={<div>Loading...</div>}>
           <Routes>
             <Route path="/" element={<Home />} />
           </Routes>
