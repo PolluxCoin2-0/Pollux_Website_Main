@@ -29,7 +29,7 @@ const Navbar = () => {
           inViewTop ? "animate-slideInFromTop" : ""
         } `}
       >
-        <div className="container mx-auto flex items-center justify-between">
+        <div className="container mx-auto flex items-center md:justify-around lg:justify-around xl:justify-around 2xl:justify-between">
         <div className="relative">
             <p
               className="text-white font-semibold text-2xl cursor-pointer"
