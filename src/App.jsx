@@ -1,12 +1,13 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import Footer from "./layout/Footer";
+import { ShimmerText } from "react-shimmer-effects";
 
 const Home = lazy(() => import("./pages/Home"));
 
 const LoadingScreen = () => {
   return (
-    <div>Loading...</div>
+<ShimmerText line={5} gap={10} />
   );
 };
 
