@@ -118,11 +118,11 @@ const Frame7 = () => {
             clickable: true,
           }}
           autoplay={{
-            delay: 800,
+            delay: 2000,
             disableOnInteraction: false,
           }}
           onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
-          modules={[EffectCoverflow, Pagination, Navigation,Autoplay]}
+          modules={[EffectCoverflow, Navigation,Autoplay ]}
           className="swiper-container"
         >
           {cardsData.map((card, index) => (

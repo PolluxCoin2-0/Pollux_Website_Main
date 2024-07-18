@@ -58,14 +58,15 @@ body {
 
 .swiper-button-prev:after {
   content: "prev";
-  font-size: 18px;
   font-weight: bold;
+  color: white;
 }
 
 .swiper-button-next:after {
   content: "next";
-  font-size: 18px;
   font-weight: bold;
+  color: white;
+
 }
 
 /* Chart CSS */
