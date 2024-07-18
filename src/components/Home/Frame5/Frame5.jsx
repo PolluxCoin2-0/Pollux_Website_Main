@@ -28,7 +28,7 @@ const Frame5 = () => {
     >
       <p
         ref={topRef}
-        className={`text-center text-4xl md:text-8xl lg:text-8xl font-bold bg-gradient-to-r from-[#FDE3AD] via-[#FAB735] to-[#FAA811] inline-block text-transparent bg-clip-text pt-6 ${
+        className={`text-center text-4xl md:text-7xl lg:text-7xl xl:text-7xl 2xl:text-8xl font-bold bg-gradient-to-r from-[#FDE3AD] via-[#FAB735] to-[#FAA811] inline-block text-transparent bg-clip-text pt-6 ${
           inViewTop ? "animate-slideInFromTop" : ""
         }`}
       >

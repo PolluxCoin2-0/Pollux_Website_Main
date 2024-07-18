@@ -82,7 +82,7 @@ const Frame7 = () => {
   return (
     <div className={`md:min-h-screen lg:min-h-screen frame7-container flex flex-col justify-center items-center py-16 px-0 md:px-24 lg:px-24 ${isVisible ? 'animate-slideInFromBottom' : ''}`}
     style={{backgroundImage: `url(${BG})`,}}>
-      <p className="text-4xl md:text-8xl lg:text-8xl font-bold bg-gradient-to-r from-[#FDE3AD] via-[#FAB735] to-[#FAA811] inline-block text-transparent bg-clip-text mb-12">
+      <p className="text-4xl md:text-7xl lg:text-7xl xl:text-7xl 2xl:text-7xl font-bold bg-gradient-to-r from-[#FDE3AD] via-[#FAB735] to-[#FAA811] inline-block text-transparent bg-clip-text mb-12">
         POX Ecosystem
       </p>
       <div className="carousel-wrapper px-2 md:px-28 lg:px-28">

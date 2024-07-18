@@ -40,7 +40,7 @@ const Frame3 = () => {
   return (
     <div className={`min-h-screen text-center px-6 md:px-12 lg:px-24 mt-0 md:mt-16 ${inView ? 'animate-slideInFromLeft' : ''}`} ref={ref}
     style={{backgroundImage: `url(${BG})`,}}>
-      <p className="text-4xl md:text-8xl lg:text-8xl md:h-28 lg:h-28 font-bold bg-gradient-to-r
+      <p className="text-4xl md:text-7xl lg:text-7xl xl:text-7xl 2xl:text-8xl md:h-28 lg:h-28 font-bold bg-gradient-to-r
        from-[#FDE3AD] via-[#FAB735] to-[#FAA811] inline-block text-transparent bg-clip-text">
         POX Market Performance
       </p>

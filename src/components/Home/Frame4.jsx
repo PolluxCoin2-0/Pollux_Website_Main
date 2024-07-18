@@ -67,7 +67,7 @@ const Frame4 = () => {
         backgroundPositionY: "top",
       }}
     >
-      <p className="pb-12 text-center text-4xl md:text-8xl lg:text-8xl font-bold bg-gradient-to-r from-[#FDE3AD] via-[#FAB735] to-[#FAA811] text-transparent bg-clip-text">
+      <p className="pb-12 text-center text-4xl md:text-7xl lg:text-7xl xl:text-7xl 2xl:text-8xl font-bold bg-gradient-to-r from-[#FDE3AD] via-[#FAB735] to-[#FAA811] text-transparent bg-clip-text">
           Insights
         </p>
         <div className="flex flex-col md:flex-row md:justify-between md:items-center space-y-8 md:space-y-0 md:space-x-4">
