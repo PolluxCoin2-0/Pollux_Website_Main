@@ -7,7 +7,7 @@ const Frame7Card = ({ img, desc, title, isActive, link }) => {
      ${isActive?"py-12 md:py-12 lg:py-12 xl:py-12 2xl:py-12 px-4 md:px-6 lg:px-6 xl:px-6 2xl:px-12":"py-12 md:py-28 lg:py-28 px-4 md:px-12 lg:px-12"} `}>
       {img && <img src={img} alt={title} className="w-[45%] h-24 object-contain mb-12" />}
       <h3 className="text-2xl font-bold mb-12 bg-[#FAA811] pt-[8px] pb-[2px] px-2 rounded-lg">{title}</h3>
-      <p className="text-justify mb-6 md:h-18 lg:h-18 xl:h-18 2xl:h-20 w-full overflow-hidden truncate-multiline-title">{desc}</p>
+      <p className="text-justify mb-6 md:h-18 lg:h-18 xl:h-18 2xl:h-24 w-full overflow-hidden truncate-multiline-title">{desc}</p>
       {isActive && (
         <a href={link}>
         <button className="w-56 font-bold  rounded-3xl flex justify-center items-center">
