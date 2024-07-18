@@ -4,11 +4,17 @@ import Footer from "./layout/Footer";
 
 const Home = lazy(() => import("./pages/Home"));
 
+const LoadingScreen = () => {
+  return (
+    <div>Loading...</div>
+  );
+};
+
 function App() {
   return (
     <div className="bg-[#10022B]">
       <Router>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<LoadingScreen />}>
           <Routes>
             <Route path="/" element={<Home />} />
           </Routes>
