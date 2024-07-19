@@ -57,7 +57,7 @@ const Frame2 = () => {
         <div className="-mt-[9%] md:col-span-2 flex flex-col justify-between space-y-12">
           <div className="bg-gradient-to-r from-[#FDE3AD] via-[#FAB735] to-[#FAA811] rounded-3xl p-8 text-white font-bold text-center shadow-md h-full flex items-center">
             <p className="text-black text-center text-base md:text-xl lg:text-xl">
-            Boosting over ${apiData?.totaladdr && formatNumberWithCommas(parseInt(apiData?.totaladdr))} accounts and  more than 
+            Boosting over {apiData?.totaladdr && formatNumberWithCommas(parseInt(apiData?.totaladdr))} accounts and  more than 
             ${apiData?.totaltxn && formatNumberWithCommas(parseInt(apiData?.totaltxn))} transactions, POX is fastest growing chain. 
             </p>
           </div>
