@@ -73,7 +73,7 @@ const Navbar = () => {
                   <a href="https://www.polluxchain.com/chain/members/signin">SR/SRR</a>
                 </p>
                 <p className="py-1">
-                  <a href="">Mining</a>
+                  <a href="https://main.polluxcoin.info/members/signin">Mining</a>
                 </p>
               </div>
             )}
@@ -123,7 +123,7 @@ const Navbar = () => {
                   <a href="https://www.polluxchain.com/chain/members/signin">SR/SRR</a>
                 </p>
                 <p className="py-1">
-                  <a href="">Mining</a>
+                  <a href="https://main.polluxcoin.info/members/signin">Mining</a>
                 </p>
               </div>
             )}
